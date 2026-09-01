@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Origin Local - About Us (All Local)",
+    "file": "origin_local_about_us_all_local.html",
+    "screenshot": "screenshots/origin_local_about_us_all_local.png"
+  },
+  {
+    "title": "Origin Local - Contact (Volt)",
+    "file": "origin_local_contact_volt.html",
+    "screenshot": "screenshots/origin_local_contact_volt.png"
+  },
+  {
+    "title": "Origin Local - Contact (All Local)",
+    "file": "origin_local_contact_all_local.html",
+    "screenshot": "screenshots/origin_local_contact_all_local.png"
+  },
+  {
+    "title": "Origin Local - Home (Volt)",
+    "file": "origin_local_home_volt.html",
+    "screenshot": "screenshots/origin_local_home_volt.png"
+  },
+  {
+    "title": "Origin Local - About Us (Dark)",
+    "file": "origin_local_about_us_dark.html",
+    "screenshot": "screenshots/origin_local_about_us_dark.png"
+  },
+  {
+    "title": "Origin Local - About Us",
+    "file": "origin_local_about_us.html",
+    "screenshot": "screenshots/origin_local_about_us.png"
+  },
+  {
+    "title": "Origin Local - Home (Dark)",
+    "file": "origin_local_home_dark.html",
+    "screenshot": "screenshots/origin_local_home_dark.png"
+  },
+  {
+    "title": "Origin Local - Home (All Local)",
+    "file": "origin_local_home_all_local.html",
+    "screenshot": "screenshots/origin_local_home_all_local.png"
+  },
+  {
+    "title": "Origin Local - Contact",
+    "file": "origin_local_contact.html",
+    "screenshot": "screenshots/origin_local_contact.png"
+  },
+  {
+    "title": "Origin Local - About Us (Volt)",
+    "file": "origin_local_about_us_volt.html",
+    "screenshot": "screenshots/origin_local_about_us_volt.png"
+  },
+  {
+    "title": "Origin Local - Contact (Dark)",
+    "file": "origin_local_contact_dark.html",
+    "screenshot": "screenshots/origin_local_contact_dark.png"
+  },
+  {
+    "title": "Origin Local - Home",
+    "file": "origin_local_home.html",
+    "screenshot": "screenshots/origin_local_home.png"
+  }
+]

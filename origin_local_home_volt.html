@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Origin Local - We Build Digital Storefronts That Ring The Phone</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "inverse-on-surface": "#313030",
+                "outline": "#8e9192",
+                "secondary-container": "#0566d9",
+                "accent-lime": "#CEFF00",
+                "primary-fixed": "#e5e2e1",
+                "surface-container-lowest": "#0e0e0e",
+                "primary": "#c8c6c5",
+                "surface-dim": "#131313",
+                "on-tertiary-fixed": "#102000",
+                "primary-container": "#121212",
+                "accent-blue": "#3b82f6",
+                "inverse-surface": "#e5e2e1",
+                "on-secondary-container": "#e6ecff",
+                "secondary-fixed-dim": "#adc6ff",
+                "primary-fixed-dim": "#c8c6c5",
+                "inverse-primary": "#5f5e5e",
+                "tertiary-container": "#091500",
+                "text-secondary": "#a1a1aa",
+                "on-tertiary": "#000000",
+                "on-primary": "#313030",
+                "on-secondary": "#002e6a",
+                "tertiary-fixed": "#CEFF00",
+                "surface-container": "#20201f",
+                "surface": "#131313",
+                "on-secondary-fixed-variant": "#004395",
+                "error-container": "#93000a",
+                "surface-container-highest": "#353535",
+                "on-surface": "#e5e2e1",
+                "on-error-container": "#ffdad6",
+                "surface-container-high": "#2a2a2a",
+                "on-surface-variant": "#c4c7c7",
+                "background": "#131313",
+                "secondary": "#adc6ff",
+                "surface-container-low": "#1c1b1b",
+                "on-primary-container": "#7e7d7d",
+                "error": "#ffb4ab",
+                "on-tertiary-container": "#578b00",
+                "surface-variant": "#353535",
+                "border-subtle": "#262626",
+                "tertiary-fixed-dim": "#CEFF00",
+                "outline-variant": "#444748",
+                "on-secondary-fixed": "#001a42",
+                "on-primary-fixed": "#1c1b1b",
+                "secondary-fixed": "#d8e2ff",
+                "on-tertiary-fixed-variant": "#304f00",
+                "tertiary": "#CEFF00",
+                "text-primary": "#ffffff",
+                "on-primary-fixed-variant": "#474646",
+                "on-error": "#690005",
+                "surface-bright": "#393939",
+                "on-background": "#e5e2e1",
+                "surface-tint": "#c8c6c5"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px",
+                "card": "0.5rem"
+        },
+        "spacing": {
+                "margin-mobile": "24px",
+                "card-padding": "40px",
+                "gutter": "32px",
+                "unit": "8px",
+                "container-max": "1440px",
+                "section-gap": "160px",
+                "section-gap-md": "80px",
+                "section-gap-lg": "120px"
+        },
+        "fontFamily": {
+                "display-lg": [
+                        "Hanken Grotesk"
+                ],
+                "label-caps": [
+                        "JetBrains Mono"
+                ],
+                "label-sm": [
+                        "Inter"
+                ],
+                "display-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "headline-sm": [
+                        "Hanken Grotesk"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ]
+        },
+        "fontSize": {
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "72px",
+                                "letterSpacing": "-0.03em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg-mobile": [
+                        "40px",
+                        {
+                                "lineHeight": "48px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "30px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body { background-color: #131313; }
+      </style>
+</head>
+<body class="text-on-background bg-background font-body-md text-body-md antialiased pt-24">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-surface/90 dark:bg-surface-container-lowest/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 dark:border-outline/20">
+<div class="flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface">
+                Origin Local
+            </div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex space-x-8 items-center">
+<li class=""><a class="text-tertiary dark:text-tertiary font-bold border-b-2 border-tertiary dark:border-tertiary pb-1 font-label-caps text-label-caps hover:text-tertiary dark:hover:text-tertiary transition-colors duration-300" href="#">Home</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant font-medium font-label-caps text-label-caps hover:text-tertiary dark:hover:text-tertiary transition-colors duration-300" href="#about">About</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant font-medium font-label-caps text-label-caps hover:text-tertiary dark:hover:text-tertiary transition-colors duration-300" href="#services">Services</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant font-medium font-label-caps text-label-caps hover:text-tertiary dark:hover:text-tertiary transition-colors duration-300" href="#portfolio">Portfolio</a></li>
+</ul>
+<button class="bg-tertiary text-on-tertiary font-label-caps text-label-caps px-6 py-2 rounded-card font-bold hover:opacity-80 scale-[0.98] transition-all hidden md:block">
+                Get a Mockup
+            </button>
+<!-- Mobile Menu Icon (Simplified for structure) -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-8 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center min-h-[80vh] py-section-gap-md">
+<div class="flex flex-col items-start justify-center gap-6">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface font-extrabold">We Build Digital Storefronts That Ring The Phone.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Stop losing local jobs to competitors just because their website looks better. Origin Local builds clean, lightning-fast, mobile-optimized sites for home service contractors.</p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
+<button class="bg-tertiary text-on-tertiary px-10 py-5 rounded-card font-label-caps text-label-caps font-bold hover:brightness-110 transition-all shadow-[0px_4px_20px_rgba(206,255,0,0.15)] flex items-center justify-center gap-2 text-lg">Get Your Free Mockup <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+<button class="bg-transparent border border-outline text-on-surface px-8 py-4 rounded-card font-label-caps text-label-caps font-bold hover:bg-surface-container-low transition-all flex items-center justify-center">
+                    See Our Work
+                </button>
+</div>
+</div>
+<div class="hidden md:block w-full h-[600px] rounded-card overflow-hidden border border-border-subtle shadow-[0px_4px_20px_rgba(0,0,0,0.5)] relative">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full" data-alt="A clean, minimalist layout of a home service contractor website displayed on a sleek modern monitor. High-key lighting, bright white and deep slate gray color palette with subtle blue accents. The design conveys professional authority and architectural precision, typical of a high-end agency mockup." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxTCKxu-O6h1GQClf_A5mbi1XCVfx9Tbt4Kqe-Zz4f8u8-toUmbxb-MERcSp-ZZSWhwHMbOFkGtS7BH1HzLL6HDbuPfxtrQZucgiTszCfXmU0Xf7bnaMcWJlkXbb95W7QoRG3YZLpWkwAIfI_l0EJGZ2ocPNFRXg-u4LzQVVEOGnX4_-Zr8vbnaolix4-McJm5YGdpU7zm-h_Qtv4-CrX2gNu52BeYonEg9fKBctRckQWwkT6PJWpp')"></div>
+<!-- Decorative overlay -->
+<div class="absolute inset-0 bg-gradient-to-tr from-surface/40 to-transparent"></div>
+</div>
+</section>
+<!-- Why Section -->
+<section class="bg-surface-container py-section-gap-lg px-margin-mobile md:px-8" id="about">
+<div class="max-w-container-max mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">A Bad Website is Costing You Referrals.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Word-of-mouth gets them to look you up, but your credibility online determines if they actually call. We build trust instantly through premium architectural design.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-highest p-8 rounded-card border border-border-subtle hover:border-tertiary transition-colors duration-300">
+<div class="w-12 h-12 bg-tertiary-container text-tertiary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Mobile-First Performance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Flawless on phones where 80% of your customers are searching. Lightning fast load times ensure you never lose a lead to impatience.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-highest p-8 rounded-card border border-border-subtle hover:border-tertiary transition-colors duration-300">
+<div class="w-12 h-12 bg-tertiary-container text-tertiary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Instant Credibility</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Premium, minimalist layouts that signal professional authority. Look like a high-end enterprise rather than a clutter directory listing.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-highest p-8 rounded-card border border-border-subtle hover:border-tertiary transition-colors duration-300">
+<div class="w-12 h-12 bg-tertiary-container text-tertiary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">touch_app</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Built to Convert</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Strategic click-to-call buttons and clean, full-width contact forms designed specifically to capture local service inquiries effortlessly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section (Bento Grid Style) -->
+<section class="py-section-gap-lg px-margin-mobile md:px-8 max-w-container-max mx-auto" id="portfolio">
+<div class="mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Built for the Trades.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Proven frameworks designed for local service businesses that want to look like top-tier professional agencies.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Portfolio Item 1 (Spans 2 columns on lg) -->
+<div class="lg:col-span-2 rounded-card overflow-hidden border border-border-subtle group relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A sophisticated website mockup for a premium landscaping company. The layout is clean and minimalist, featuring deep slate backgrounds with high-contrast white text and subtle blue accents. High-end modern photography of a landscaped garden is visible in the mockup. The aesthetic implies authority and trust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfrynLsS0xvMs-IwPVfbXW4p7o8HSaPXdZK8sOxbLaQ5IJ8vYsLyM-npxbf0ROl-H6NCcMzVoIrXJE39dArampNxrcTfOZcXmKzPCjKSBoYGNTPfiOV44MfQHqyWnlB2QrITBlajeP7Ryqxb_ed16cJY_yIUen9ZwOddT3JyL31DtS4AnQhMOjgXL51IxlGwt8G9MZFjxDqgqyTQVVg536sIWF8mjI-55khJgdGBPerJXMFfvK1i7_')"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/40 group-hover:bg-surface-container-lowest/60 transition-colors duration-300 flex items-end p-6">
+<div class="bg-surface-container-highest/90 backdrop-blur-sm p-4 rounded-lg">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Apex Landscaping</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">Lead Generation Site</p>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 2 -->
+<div class="rounded-card overflow-hidden border border-border-subtle group relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A sleek, mobile-optimized website interface for a plumbing contractor displayed on a phone screen mockup. The design uses stark whites, minimal borders, and a prominent bright blue 'Book Now' button. The style is strictly architectural and premium." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoNLBkKviWPt5Y5jB3RYvpabuH527L4KhGP8oQbTKbvN2bxhYJ4hFcyJEQd7xd6NqsK1uIhwhlDQ7RNXIkK-GiExUsZN96gM2m6unuyTIc5GP0LRJ65_66GrG--knq68StXzkUC1r1wcdQBIW3UswqvrYq6h81Ievf7wSof3FYij8Tc7iSyjRof2YK8UtbrekiNk1Re6eV4FTBa1VpZs43jucthr0bewPOHZTggQ8uLvvItAIzAqvG')"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/40 group-hover:bg-surface-container-lowest/60 transition-colors duration-300 flex items-end p-6">
+<div class="bg-surface-container-highest/90 backdrop-blur-sm p-4 rounded-lg w-full">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">FlowTech</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">Mobile First Layout</p>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 3 (Full width row) -->
+<div class="md:col-span-2 lg:col-span-3 h-[400px] rounded-card overflow-hidden border border-border-subtle group relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A split-screen contact page design for a roofing business. One side features a dark slate background with crisp white typography detailing contact info, while the other side is a bright white minimalist contact form with subtle gray inputs and a solid blue submit button. Professional, high-end agency aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoJhX2J52fpYhIcA-cov6RwfQpBzaCFOWJBOJ-Y2jSgF978Pdf7QaicQ3IC08oVRE1P6ZRcPU5FcT6QCyPehA1FS8bPIf7WGtKRGw5U2QUwxb3LRRxOHYbD5VhVUbydEFmwoEwV0vShEG1SSFzv7b45oEfkR4gklCfE2LGJPwUzLOitImXgZoctwTDn4hQ2w9SwsgZhlj20HAH9tShm_Djf5aplY-E0bpdGuFXCiVd66OtGXYv4XWs')"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/40 group-hover:bg-surface-container-lowest/60 transition-colors duration-300 flex flex-col items-center justify-center">
+<button class="bg-surface-container-highest text-on-surface px-6 py-3 rounded-card font-label-caps text-label-caps font-bold hover:shadow-[0px_4px_20px_rgba(0,0,0,0.5)] border border-border-subtle hover:border-tertiary transition-all flex items-center gap-2">
+                        View Full Gallery
+                        <span class="material-symbols-outlined text-[16px] text-tertiary">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="bg-surface-container-lowest px-margin-mobile md:px-8 py-section-gap-lg border-t border-b border-border-subtle">
+<div class="max-w-3xl mx-auto text-center flex flex-col items-center gap-8">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface">Let’s Build Your Digital Handshake.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Stop losing to competitors with inferior service but better websites. Claim your local authority today.</p>
+<button class="bg-tertiary text-on-tertiary px-10 py-5 rounded-card font-label-caps text-label-caps font-bold hover:brightness-110 transition-all shadow-sm text-lg mt-4 w-full sm:w-auto">
+                Start Your Project
+            </button>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest w-full mt-section-gap-lg border-t border-border-subtle">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-8 py-section-gap-md max-w-[1440px] mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-extrabold text-on-surface mb-4">
+                    Origin Local
+                </div>
+<p class="text-on-surface-variant font-body-md text-body-md">
+                    © 2024 Origin Local. Architectural Precision for Local Services.
+                </p>
+</div>
+<!-- Navigation Links mapping based on JSON constraints -->
+<div class="md:col-span-3 flex flex-wrap gap-8 md:justify-end items-start mt-8 md:mt-0">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Contact Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-200" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>
