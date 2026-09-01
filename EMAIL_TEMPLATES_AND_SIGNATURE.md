@@ -1,143 +1,179 @@
-# Origin Local — Official Email Signature & Agency Outreach Templates
-**For:** Wilfredo Caldero (`wilfredo@originlocalco.com`)  
+# Origin Local — Site Slinger Cold Outreach & Email Templates
+**Author:** Wilfredo Caldero  
 **Direct Line:** (970) 402-2707  
+**Email:** wilfredo@originlocalco.com  
 **Website:** [originlocalco.com](https://originlocalco.com)  
+**Location:** Northern Colorado (Fort Collins, Loveland, Greeley, Longmont, Denver)
 
 ---
 
-## 🖋️ 1. Your Official Email Signature
+## 🖋️ Official Gmail Signature
 
-Copy and paste this into **Gmail Settings ➔ General ➔ Signature**:
+Set this in **Gmail ➔ Settings (gear icon) ➔ See all settings ➔ Signature**:
 
 ```text
 --
 Wilfredo Caldero
 Founder | Origin Local
-Direct: (970) 402-2707
-Email: wilfredo@originlocalco.com
-Web: https://originlocalco.com
+📞 (970) 402-2707
+✉️ wilfredo@originlocalco.com
+🌐 originlocalco.com
 Northern Colorado · Clean, Sub-Second Websites for Local Trades
 ```
 
 ---
 
-## 📨 2. The 4 Core Agency Email Templates
+## 🎯 Part 1: The Facebook "Site Slinger" Templates
 
-### Template 1: 48-Hour Mockup Delivery (Highest Conversion)
-**Subject:** Here is your interactive website preview for [Business Name]  
-**When to send:** Whenever someone fills out your website form or requests a mockup.
+These are designed specifically for Facebook Messenger, Facebook Business Pages, and local Facebook community groups where contractors hang out.
 
-```text
-Hey [First Name],
+### 1. The Facebook Messenger "Casual Slinger" (Direct to Page / Owner)
+*Use this when messaging a contractor's Facebook page or owner's personal profile.*
 
-Wilfredo here from Origin Local. 
-
-As promised, our design team put together an interactive mobile prototype tailored specifically for [Business Name]:
-
-👉 View Your Custom Preview: [Insert Link]
-
-Open that link on your phone. You'll notice three key things:
-1. It loads in under half a second (no plugin lag).
-2. The tap-to-call button is placed right in the mobile thumb zone so clients can reach you in one tap.
-3. It’s engineered cleanly around your trade rather than looking like a generic template.
-
-Take a look when you have 2 minutes. If you like the direction, we can lock in your local keywords, phone lines, and reviews to get your official site launched in just a couple of days.
-
-If not, no hard feelings at all — you keep the preview link either way.
-
-Best,
-
---
-Wilfredo Caldero
-Founder | Origin Local
-(970) 402-2707
-wilfredo@originlocalco.com
-https://originlocalco.com
-```
+> **Subject / Message:**  
+> Hey [First Name], quick heads up — I was checking out your page on my phone and noticed your current website takes about 4–5 seconds to load, and the call button is buried way down at the bottom.
+> 
+> I run Origin Local here in Northern Colorado. I actually just slung together a quick interactive mobile mockup for [Business Name] to show you how clean it looks with sub-second speed and a sticky tap-to-call button.
+> 
+> Zero pitch, 100% free — want me to drop the preview link here so you can tap through it on your phone?
 
 ---
 
-### Template 2: Cold Outreach / Audit (Local Trades & Contractors)
-**Subject:** Quick question about [Business Name]'s mobile site  
-**When to send:** To local contractors/trades with slow or outdated websites.
+### 2. The Facebook Group "3 Free Mockup Slots" Post
+*Post this in local Northern Colorado contractor, trade, or business networking groups.*
 
-```text
-Hey [First Name],
-
-I came across [Business Name] while searching for reputable [roofing / plumbing / trade] specialists in [City / Northern Colorado]. 
-
-Your reviews are great, but I noticed your current mobile website takes about 4–5 seconds to load and makes customers hunt around to find your phone number. Over half of local customers searching on their phones bounce if a page takes more than 2.5 seconds.
-
-I run Origin Local here in Northern Colorado. We build clean, sub-second websites designed specifically to make local business phones ring.
-
-I'd be happy to put together a free, interactive 48-hour mockup of what a modern, high-converting site would look like for [Business Name] — zero deposit, no obligation.
-
-Would it be okay if I send a quick preview link over later this week?
-
-Best,
-
---
-Wilfredo Caldero
-Founder | Origin Local
-(970) 402-2707
-wilfredo@originlocalco.com
-https://originlocalco.com
-```
+> **Post Copy:**  
+> Hey Northern Colorado business owners 👋
+> 
+> I run a web design studio based right here in Northern Colorado called **Origin Local** ([originlocalco.com](https://originlocalco.com)). 
+> 
+> Most local contractor sites out there are weighed down by bloated WordPress plugins and take 4+ seconds to load — which quietly costs you calls on mobile.
+> 
+> I have room on my calendar to build **3 free, interactive mobile prototypes** this week for local trade businesses (roofing, plumbing, HVAC, landscaping, dental, etc.). 
+> 
+> • No deposit  
+> • No obligation  
+> • You keep the live preview link either way  
+> 
+> If you want to see what your business should look like with a sub-second load speed and a thumb-zone call button, comment your business name below or shoot me a DM and I’ll sling one together for you in 48 hours! 🔨
 
 ---
 
-### Template 3: Post-Discovery Call & Proposal Confirmation
-**Subject:** Next steps & launch plan for [Business Name]  
-**When to send:** Right after speaking with a prospective client on the phone.
+### 3. The "Loom / 45-Second Video Slinger" (Highest Response Rate)
+*Record a quick 45-second screen recording on your phone/computer showing their slow site vs. the fast Origin Local sample mockup.*
 
-```text
-Hey [First Name],
-
-Great speaking with you today about [Business Name]. 
-
-Here is a quick recap of what we’re building for you:
-• High-performance digital storefront (sub-second load speed, zero bloat)
-• Prominent mobile tap-to-dial buttons so searchers call you immediately
-• Full local SEO setup, Google Map Pack schema, and verified review integration
-• Custom domain connection, secure SSL, and edge hosting
-
-We handle everything from start to finish so you don't have to lift a finger or waste time troubleshooting tech.
-
-Let me know if you have any questions, or reply "Approved" and we’ll begin the final build!
-
-Best,
-
---
-Wilfredo Caldero
-Founder | Origin Local
-(970) 402-2707
-wilfredo@originlocalco.com
-https://originlocalco.com
-```
+> **Subject:** Made a quick 45-sec video mockup for [Business Name]  
+> 
+> Hey [First Name],
+> 
+> I was looking at local [roofing / trade] companies in [City / Northern Colorado] and noticed your mobile site has quite a bit of lag before the call button shows up. 
+> 
+> Instead of just sending a boring sales pitch, I recorded a 45-second video walking through an interactive mobile mockup I slung together for [Business Name]:
+> 
+> 👉 Watch 45-Sec Preview: [Insert Loom / Video Link]
+> 
+> Notice how fast it loads and how the sticky call button lets a customer reach you in one thumb tap.
+> 
+> If you like the direction, we can launch your real site in just a couple of days. If not, no worries at all — hope the video gives you some good ideas either way!
+> 
+> Best,
+> 
+> Wilfredo Caldero  
+> Founder | Origin Local  
+> (970) 402-2707  
+> wilfredo@originlocalco.com  
 
 ---
 
-### Template 4: Voice AI & Receptionist Add-On Follow-Up
-**Subject:** Quick idea for capturing after-hours jobs at [Business Name]  
-**When to send:** To existing website clients or busy service pros who miss calls.
+## 📧 Part 2: High-Converting Cold Email Templates
 
-```text
-Hey [First Name],
+### 4. The "I Already Built It For You" Short Cold Email
+*Ultra-short, curiosity-driven cold email for local trade owners.*
 
-One quick follow-up for [Business Name]. 
+> **Subject:** quick mockup for [Business Name]  
+> 
+> Hey [First Name],
+> 
+> I saw your work on [Facebook / Google] — looks top notch. 
+> 
+> Your mobile site, however, is taking about 4.5 seconds to load on mobile and looks pretty dated compared to the quality of your actual work.
+> 
+> I run Origin Local here in Northern Colorado. I actually went ahead and slung together a clean, sub-second mobile prototype tailored for [Business Name]:
+> 
+> 👉 [Insert Mockup Link]
+> 
+> Pull it up on your phone when you have 30 seconds. No pitch — just wanted to show you what a modern digital storefront looks like for your trade.
+> 
+> Let me know what you think!
+> 
+> Best,
+> 
+> Wilfredo Caldero  
+> (970) 402-2707  
+> Origin Local — [originlocalco.com](https://originlocalco.com)  
 
-A lot of the local contractors we work with tell us their biggest headache isn't getting calls — it's answering them while they're on a ladder, under a sink, or with their family.
+---
 
-We offer an optional 24/7 Voice AI Receptionist add-on that answers your phone in natural human speech, qualifies the caller’s project, and texts their details directly to your phone so you never lose a $2,000 job to voicemail.
+### 5. The "Speed-to-Lead" Google Maps Audit Slinger
+*Targeting contractors with strong Google reviews but weak websites.*
 
-Let me know if you'd like to hear a quick 30-second audio demo of how it works!
+> **Subject:** [Business Name] Google reviews vs. mobile website  
+> 
+> Hey [First Name],
+> 
+> You guys have over [XX] 5-star reviews on Google, which is awesome. 
+> 
+> But when someone clicks your website from Google Maps on their phone, they’re waiting nearly 5 seconds for the page to render. Most people bounce and call the next listing before your phone number even loads.
+> 
+> At Origin Local, we build clean, sub-second digital storefronts engineered specifically to make the phone ring.
+> 
+> Can I sling together a free 48-hour mockup for [Business Name] so you can see the difference on your own phone? Zero deposit, no strings attached.
+> 
+> Best,
+> 
+> Wilfredo Caldero  
+> (970) 402-2707  
+> wilfredo@originlocalco.com  
 
-Best,
+---
 
---
-Wilfredo Caldero
-Founder | Origin Local
-(970) 402-2707
-wilfredo@originlocalco.com
-https://originlocalco.com
-```
+## 🔄 Part 3: The 3-Touch Follow-Up Slinger Sequence
+
+### Touch 1 (Day 3): The Quick Bump
+> **Subject:** Re: quick mockup for [Business Name]  
+> 
+> Hey [First Name] — just wanted to make sure you saw the mobile mockup link I sent over earlier this week:
+> 
+> 👉 [Insert Mockup Link]
+> 
+> Did you get a chance to click through it on your phone?
+> 
+> Wilfredo
+
+### Touch 2 (Day 6): The Speed Metric
+> **Subject:** Re: quick mockup for [Business Name]  
+> 
+> Hey [First Name],
+> 
+> Quick stat for you: Google's data shows that every 1-second delay on mobile drops conversions by up to 20%. 
+> 
+> The prototype I built for [Business Name] loads in 0.4 seconds flat with a sticky tap-to-call button. 
+> 
+> Happy to jump on a quick 5-minute call if you want to get this live for your busy season: (970) 402-2707.
+> 
+> Best,  
+> Wilfredo
+
+### Touch 3 (Day 10): The Friendly Breakup
+> **Subject:** Permission to close your file for [Business Name]?  
+> 
+> Hey [First Name],
+> 
+> Haven't heard back, so I assume you're all set on the website front for now — totally understand!
+> 
+> I'll archive your mockup link on our end. If you ever want to upgrade your site down the road to capture more calls, feel free to give me a shout at (970) 402-2707 or visit [originlocalco.com](https://originlocalco.com).
+> 
+> Wishing you guys a great rest of the year.
+> 
+> Best,  
+> Wilfredo Caldero
