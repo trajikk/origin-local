@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Origin Local | We Build Websites That Make The Phone Ring</title>
-  <meta name="description" content="We build clean, sub-second, mobile-first websites engineered to turn searchers into paying customers for local trades and contractors in Northern Colorado." />
+  <title>Origin Local — Digital Storefronts for Local Businesses</title>
+  <meta name="description" content="We build fast, mobile-first websites — then make sure people actually find you, and that every call gets answered. Web design, AI search visibility, and Voice AI under one roof." />
 
   <!-- Tailwind CSS CDN with plugins -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -101,9 +101,9 @@
     </div>
 
     <!-- Main Navigation Bar -->
-    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
       <!-- Logo -->
-      <a href="#" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-lime to-brand-emerald flex items-center justify-center font-display font-black text-brand-black text-xl shadow-[0_0_20px_rgba(206,255,0,0.3)] group-hover:scale-105 transition-transform">
           O
         </div>
@@ -112,16 +112,46 @@
             ORIGIN<span class="text-brand-lime font-mono ml-1">LOCAL</span>
           </span>
           <span class="font-mono text-[10px] tracking-widest text-brand-muted uppercase mt-0.5 block">
-            Digital Storefronts for Local Trades
+            Digital Storefronts for Local Businesses
           </span>
         </div>
       </a>
 
-      <!-- Center Links -->
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-slate">
-        <a href="#framework" class="hover:text-brand-lime transition-colors">The Framework</a>
+      <!-- Center Links & Services Dropdown -->
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-brand-slate">
+        
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-brand-lime transition-colors py-2 focus:outline-none">
+            <span>Services</span>
+            <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+          </button>
+          
+          <div class="absolute top-full left-0 w-64 pt-2 hidden group-hover:block transition-all">
+            <div class="glass-card rounded-xl p-3 border border-brand-border shadow-2xl bg-brand-card/95 backdrop-blur-xl flex flex-col gap-1">
+              <a href="/services/website-design.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">Website Design</span>
+                <span class="text-[10px] font-mono text-brand-muted">01</span>
+              </a>
+              <a href="/services/seo-geo.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">SEO-GEO</span>
+                <span class="text-[10px] font-mono text-brand-muted">02</span>
+              </a>
+              <a href="/services/voice-ai.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">Voice AI</span>
+                <span class="text-[10px] font-mono text-brand-muted">03</span>
+              </a>
+              <a href="/services/content-creation.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">Content Creation</span>
+                <span class="text-[10px] font-mono text-brand-muted">04</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#how-it-works" class="hover:text-brand-lime transition-colors">How It Works</a>
         <a href="#speed-audit" class="hover:text-brand-lime transition-colors">Speed Test</a>
-        <a href="#process" class="hover:text-brand-lime transition-colors">How It Works</a>
+        
         <a href="tel:9704022707" class="flex items-center gap-1.5 text-white hover:text-brand-lime transition-colors font-mono text-xs">
           <span class="material-symbols-outlined text-sm text-brand-lime">call</span>
           <span>(970) 402-2707</span>
@@ -133,8 +163,36 @@
         <button onclick="openMockupModal()" class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-display font-bold text-brand-black bg-brand-lime rounded-lg overflow-hidden shadow-[0_0_25px_rgba(206,255,0,0.25)] hover:shadow-[0_0_35px_rgba(206,255,0,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all">
           <span>Claim Free Mockup &rarr;</span>
         </button>
+        
+        <!-- Mobile Menu Toggle -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-brand-slate hover:text-white">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
       </div>
     </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-brand-card/95 backdrop-blur-xl border-b border-brand-border px-6 py-4 flex-col gap-3">
+      <div class="text-xs font-mono text-brand-muted uppercase tracking-wider pb-1">Services</div>
+      <a href="/services/website-design.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Website Design
+      </a>
+      <a href="/services/seo-geo.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> SEO-GEO (AI Search Visibility)
+      </a>
+      <a href="/services/voice-ai.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> AI Voice Receptionist
+      </a>
+      <a href="/services/content-creation.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Content Creation
+      </a>
+      
+      <div class="pt-3 border-t border-brand-border/60 flex flex-col gap-2">
+        <a href="#how-it-works" onclick="toggleMobileMenu()" class="text-sm font-medium text-brand-slate hover:text-white">How It Works</a>
+        <a href="about.html" class="text-sm font-medium text-brand-slate hover:text-white">About Us</a>
+        <a href="contact.html" class="text-sm font-medium text-brand-slate hover:text-white">Contact</a>
+      </div>
+    </div>
   </header>
 
   <!-- Main Container -->
@@ -158,11 +216,11 @@
           </div>
 
           <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl leading-[1.08] tracking-tight text-white">
-            We Build Websites That Make The <span class="bg-gradient-to-r from-brand-lime via-white to-brand-emerald bg-clip-text text-transparent">Phone Ring.</span>
+            Your Website Is The Start. <span class="bg-gradient-to-r from-brand-lime via-white to-brand-emerald bg-clip-text text-transparent">We Handle The Rest.</span>
           </h1>
 
           <p class="text-lg sm:text-xl text-brand-slate max-w-2xl leading-relaxed">
-            Your competitors' sites load slow, bury their phone number, and look like every other template on Google. We build clean, sub-second, mobile-first sites engineered to turn searchers into paying customers — done in days, not months.
+            We build fast, mobile-first websites — then make sure people actually find you, and that every call gets answered. Web design, AI search visibility, and an AI receptionist that never misses a lead, all under one roof.
           </p>
 
           <!-- CTAs -->
@@ -193,14 +251,13 @@
             </div>
             <div>
               <div class="font-display font-extrabold text-2xl sm:text-3xl text-white">100%</div>
-              <div class="text-xs font-mono text-brand-muted uppercase mt-0.5">Mobile-Optimized</div>
+              <div class="text-xs font-mono text-brand-muted uppercase mt-0.5">Sites Delivered On Time</div>
             </div>
           </div>
         </div>
 
         <!-- Right Hero Live Mockup Preview (Clearly Labeled Sample) -->
         <div class="lg:col-span-5 relative">
-          <!-- Device Preview Frame -->
           <div class="glass-card rounded-2xl p-4 border border-brand-border shadow-2xl relative overflow-hidden">
             
             <!-- Clear Example Label Banner -->
@@ -297,7 +354,112 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- 3. THE PROBLEM / THE FIX (SPEED DIAGNOSTIC)-->
+    <!-- 3. WHAT WE OFFER (FOUR CORE SERVICES)      -->
+    <!-- ========================================== -->
+    <section id="services" class="max-w-7xl mx-auto px-6 py-20 border-t border-brand-border">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-block px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border text-xs font-mono text-brand-lime mb-3">
+          A FULL DIGITAL PRESENCE, NOT JUST A WEBSITE
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+          Four Ways We Get You More Customers.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Service 01: Website Build -->
+        <div class="glass-card glass-card-interactive rounded-2xl p-8 border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-sm font-bold text-brand-lime">01</span>
+              <span class="material-symbols-outlined text-brand-lime text-2xl">laptop_mac</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white mb-2">Website Build</h3>
+            <p class="text-brand-slate text-sm sm:text-base leading-relaxed mb-6">
+              Fast, mobile-first, built to convert — not a recycled template. Live in days, not months.
+            </p>
+          </div>
+          <a href="/services/website-design.html" class="inline-flex items-center gap-2 text-sm font-display font-bold text-brand-lime hover:underline underline-offset-4">
+            <span>Learn More</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 02: SEO-GEO / AI Search Visibility -->
+        <div class="glass-card glass-card-interactive rounded-2xl p-8 border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-sm font-bold text-brand-lime">02</span>
+              <span class="material-symbols-outlined text-brand-lime text-2xl">troubleshoot</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white mb-2">SEO-GEO / AI Search Visibility</h3>
+            <p class="text-brand-slate text-sm sm:text-base leading-relaxed mb-6">
+              Google isn't the only place people search anymore. We optimize your business to get found and recommended by AI search tools like ChatGPT and Google AI Overviews, not just traditional rankings.
+            </p>
+          </div>
+          <a href="/services/seo-geo.html" class="inline-flex items-center gap-2 text-sm font-display font-bold text-brand-lime hover:underline underline-offset-4">
+            <span>Learn More</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 03: AI Voice Receptionist -->
+        <div class="glass-card glass-card-interactive rounded-2xl p-8 border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-sm font-bold text-brand-lime">03</span>
+              <span class="material-symbols-outlined text-brand-lime text-2xl">headset_mic</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white mb-2">AI Voice Receptionist</h3>
+            <p class="text-brand-slate text-sm sm:text-base leading-relaxed mb-6">
+              Never miss another call. Our Voice AI answers after-hours, books appointments, and handles the questions that would otherwise go to voicemail — and get ignored.
+            </p>
+          </div>
+          <a href="/services/voice-ai.html" class="inline-flex items-center gap-2 text-sm font-display font-bold text-brand-lime hover:underline underline-offset-4">
+            <span>Learn More</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 04: Content Creation -->
+        <div class="glass-card glass-card-interactive rounded-2xl p-8 border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-sm font-bold text-brand-lime">04</span>
+              <span class="material-symbols-outlined text-brand-lime text-2xl">movie</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white mb-2">Content Creation</h3>
+            <p class="text-brand-slate text-sm sm:text-base leading-relaxed mb-6">
+              Short-form video and social content, produced and posted for you, so your business shows up where your customers are actually scrolling.
+            </p>
+          </div>
+          <a href="/services/content-creation.html" class="inline-flex items-center gap-2 text-sm font-display font-bold text-brand-lime hover:underline underline-offset-4">
+            <span>Learn More</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Add-On Callout Banner -->
+      <div class="mt-8 glass-card rounded-2xl p-6 border-brand-border bg-brand-card/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3 text-left">
+          <div class="w-9 h-9 rounded-lg bg-brand-lime/10 text-brand-lime flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-base">add_circle</span>
+          </div>
+          <p class="text-sm text-brand-slate">
+            <strong class="text-white">Ask us about:</strong> review management, missed-call text-back, and paid ad management — available as add-ons depending on your business.
+          </p>
+        </div>
+        <a href="contact.html" class="shrink-0 px-4 py-2 bg-brand-cardHover hover:bg-brand-borderLight text-xs font-mono text-brand-slate hover:text-white rounded-lg border border-brand-border transition-all">
+          Inquire About Add-Ons &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. THE PROBLEM / THE FIX (SPEED DIAGNOSTIC)-->
     <!-- ========================================== -->
     <section id="speed-audit" class="max-w-7xl mx-auto px-6 py-20 border-t border-brand-border">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -381,9 +543,9 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- 4. HOW IT WORKS (ZERO RISK)                -->
+    <!-- 5. HOW IT WORKS (ZERO RISK)                -->
     <!-- ========================================== -->
-    <section id="process" class="max-w-7xl mx-auto px-6 py-20 border-t border-brand-border">
+    <section id="how-it-works" class="max-w-7xl mx-auto px-6 py-20 border-t border-brand-border">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="inline-block px-3 py-1 rounded-full bg-brand-card border border-brand-border text-xs font-mono text-brand-lime mb-3">
           ZERO RISK, SEE IT BEFORE YOU PAY
@@ -420,7 +582,7 @@
           <div class="font-display font-black text-4xl text-brand-lime/30 mb-4">03</div>
           <h3 class="font-display font-bold text-xl text-white mb-2">Domain Connect & Launch</h3>
           <p class="text-sm text-brand-slate leading-relaxed">
-            We point your domain, activate SSL, and get your phone lines live — usually within days of approval.
+            We point your domain, activate SSL, and get your phone lines live — usually within 3 days of approval.
           </p>
         </div>
       </div>
@@ -432,27 +594,13 @@
         </button>
         <div class="text-xs font-mono text-brand-muted mt-2">Takes 60 seconds. No credit card required.</div>
       </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- 5. OPTIONAL ADD-ON (ONE CLEAN LINE)        -->
-    <!-- ========================================== -->
-    <section class="max-w-4xl mx-auto px-6 py-8">
-      <div class="glass-card rounded-2xl p-6 border-brand-border text-center flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-3 text-left">
-          <div class="w-10 h-10 rounded-xl bg-brand-lime/10 text-brand-lime flex items-center justify-center shrink-0">
-            <span class="material-symbols-outlined text-lg">smart_toy</span>
-          </div>
-          <div>
-            <div class="text-xs font-mono text-brand-lime font-bold uppercase">Optional Add-On</div>
-            <p class="text-sm text-brand-text mt-0.5">
-              Want an AI receptionist that answers after-hours calls too? Ask us about adding Voice AI once your site is live.
-            </p>
-          </div>
-        </div>
-        <a href="tel:9704022707" class="shrink-0 px-4 py-2 bg-brand-cardHover hover:bg-brand-borderLight text-xs font-mono text-brand-slate hover:text-white rounded-lg border border-brand-border transition-all">
-          Call (970) 402-2707
-        </a>
+      <!-- Not Sure What You Need Yet Callout -->
+      <div class="mt-14 max-w-2xl mx-auto text-center p-6 rounded-xl bg-brand-card/40 border border-brand-border">
+        <h4 class="font-display font-bold text-white text-base">Not Sure What You Need Yet?</h4>
+        <p class="text-sm text-brand-slate mt-1.5">
+          That's fine — most people start with the free mockup and figure the rest out from there. We'll tell you honestly what will and won't move the needle for your specific business.
+        </p>
       </div>
     </section>
 
@@ -495,7 +643,7 @@
       <div class="flex flex-wrap items-center gap-6 text-xs font-mono text-brand-slate">
         <a href="about.html" class="hover:text-brand-lime transition-colors">About Us</a>
         <a href="contact.html" class="hover:text-brand-lime transition-colors">Contact</a>
-        <a href="mailto:Wilfredo@originlocalco.com" class="hover:text-brand-lime transition-colors">Wilfredo@originlocalco.com</a>
+        <a href="mailto:hello@originlocalco.com" class="hover:text-brand-lime transition-colors">hello@originlocalco.com</a>
         <a href="tel:9704022707" class="text-white hover:text-brand-lime font-bold transition-colors">(970) 402-2707</a>
       </div>
     </div>
@@ -529,7 +677,7 @@
         <div class="grid grid-cols-2 gap-3">
           <div>
             <label class="block text-xs font-mono text-brand-slate uppercase mb-1">Industry / What You Do *</label>
-            <input type="text" required placeholder="e.g. Roofing, Plumbing, Dental" class="w-full bg-brand-card border border-brand-border rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-lime transition-colors">
+            <input type="text" required placeholder="e.g. Roofing, Plumbing, Dental, Salon" class="w-full bg-brand-card border border-brand-border rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-lime transition-colors">
           </div>
           <div>
             <label class="block text-xs font-mono text-brand-slate uppercase mb-1">City / Region *</label>
@@ -583,6 +731,12 @@
       const modal = document.getElementById('mockup-modal');
       modal.classList.add('hidden');
       modal.classList.remove('flex');
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
     }
 
     function handleMockupSubmit(e) {

@@ -1,282 +1,257 @@
 <!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>About Us | Origin Local — Digital Storefronts for Local Businesses</title>
+  <meta name="description" content="Rooted in Colorado. We build digital storefronts that make the phone ring for local businesses and contractors." />
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Us | Origin Local</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "inverse-on-surface": "#313030",
-                "outline": "#8e9192",
-                "secondary-container": "#0566d9",
-                "accent-lime": "#CEFF00",
-                "primary-fixed": "#e5e2e1",
-                "surface-container-lowest": "#0e0e0e",
-                "primary": "#c8c6c5",
-                "surface-dim": "#131313",
-                "on-tertiary-fixed": "#102000",
-                "primary-container": "#121212",
-                "accent-blue": "#3b82f6",
-                "inverse-surface": "#e5e2e1",
-                "on-secondary-container": "#e6ecff",
-                "secondary-fixed-dim": "#adc6ff",
-                "primary-fixed-dim": "#c8c6c5",
-                "inverse-primary": "#5f5e5e",
-                "tertiary-container": "#091500",
-                "text-secondary": "#a1a1aa",
-                "on-tertiary": "#1f3700",
-                "on-primary": "#313030",
-                "on-secondary": "#002e6a",
-                "tertiary-fixed": "#CEFF00",
-                "surface-container": "#20201f",
-                "surface": "#131313",
-                "on-secondary-fixed-variant": "#004395",
-                "error-container": "#93000a",
-                "surface-container-highest": "#353535",
-                "on-surface": "#e5e2e1",
-                "on-error-container": "#ffdad6",
-                "surface-container-high": "#2a2a2a",
-                "on-surface-variant": "#c4c7c7",
-                "background": "#131313",
-                "secondary": "#adc6ff",
-                "surface-container-low": "#1c1b1b",
-                "on-primary-container": "#7e7d7d",
-                "error": "#ffb4ab",
-                "on-tertiary-container": "#578b00",
-                "surface-variant": "#353535",
-                "border-subtle": "#262626",
-                "tertiary-fixed-dim": "#CEFF00",
-                "outline-variant": "#444748",
-                "on-secondary-fixed": "#001a42",
-                "on-primary-fixed": "#1c1b1b",
-                "secondary-fixed": "#d8e2ff",
-                "on-tertiary-fixed-variant": "#304f00",
-                "tertiary": "#CEFF00",
-                "text-primary": "#ffffff",
-                "on-primary-fixed-variant": "#474646",
-                "on-error": "#690005",
-                "surface-bright": "#393939",
-                "on-background": "#e5e2e1",
-                "surface-tint": "#c8c6c5"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.25rem",
-                "lg": "0.5rem",
-                "xl": "0.75rem",
-                "full": "9999px"
-        },
-        "spacing": {
-                "margin-mobile": "24px",
-                "card-padding": "40px",
-                "gutter": "32px",
-                "unit": "8px",
-                "container-max": "1440px",
-                "section-gap": "160px"
-        },
-        "fontFamily": {
-                "display-lg": [
-                        "Hanken Grotesk"
-                ],
-                "label-caps": [
-                        "JetBrains Mono"
-                ],
-                "label-sm": [
-                        "Inter"
-                ],
-                "display-lg-mobile": [
-                        "Hanken Grotesk"
-                ],
-                "headline-sm": [
-                        "Hanken Grotesk"
-                ],
-                "body-lg": [
-                        "Inter"
-                ],
-                "body-md": [
-                        "Inter"
-                ],
-                "headline-md": [
-                        "Hanken Grotesk"
-                ]
-        },
-        "fontSize": {
-                "display-lg": [
-                        "64px",
-                        {
-                                "lineHeight": "72px",
-                                "letterSpacing": "-0.03em",
-                                "fontWeight": "800"
-                        }
-                ],
-                "label-caps": [
-                        "12px",
-                        {
-                                "lineHeight": "16px",
-                                "letterSpacing": "0.1em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "label-sm": [
-                        "12px",
-                        {
-                                "lineHeight": "16px",
-                                "fontWeight": "500"
-                        }
-                ],
-                "display-lg-mobile": [
-                        "40px",
-                        {
-                                "lineHeight": "48px",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "800"
-                        }
-                ],
-                "headline-sm": [
-                        "24px",
-                        {
-                                "lineHeight": "32px",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "30px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "24px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "headline-md": [
-                        "32px",
-                        {
-                                "lineHeight": "40px",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "700"
-                        }
-                ]
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: "#0A0A0B",
+              card: "#121215",
+              cardHover: "#18181D",
+              border: "#23232A",
+              borderLight: "#32323C",
+              lime: "#CEFF00",
+              limeGlow: "rgba(206, 255, 0, 0.25)",
+              emerald: "#10B981",
+              slate: "#94A3B8",
+              muted: "#64748B",
+              text: "#F8FAFC"
+            }
+          },
+          fontFamily: {
+            display: ["'Hanken Grotesk'", "sans-serif"],
+            sans: ["'Inter'", "sans-serif"],
+            mono: ["'JetBrains Mono'", "monospace"]
+          }
         }
-},
-    },
-  }
-</script>
+      }
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0A0A0B; }
+    ::-webkit-scrollbar-thumb { background: #23232A; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #CEFF00; }
+
+    .bg-mesh-glow {
+      background: radial-gradient(circle at 50% -20%, rgba(206, 255, 0, 0.10), transparent 45%),
+                  radial-gradient(circle at 90% 40%, rgba(59, 130, 246, 0.06), transparent 40%),
+                  radial-gradient(circle at 10% 60%, rgba(16, 185, 129, 0.05), transparent 40%),
+                  #0A0A0B;
+    }
+
+    .glass-card {
+      background: rgba(18, 18, 21, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
 </head>
-<body class="bg-background text-on-background antialiased font-body-md text-body-md min-h-screen flex flex-col pt-[88px]">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-border-subtle">
-<div class="flex justify-between items-center px-8 py-4 max-w-container-max mx-auto">
-<a class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface hover:opacity-80 transition-opacity" href="#">
-                Origin Local
-            </a>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Home</a>
-<a class="text-tertiary-fixed font-bold border-b-2 border-tertiary-fixed pb-1 hover:text-tertiary transition-colors duration-300 font-label-caps text-label-caps uppercase opacity-80 scale-[0.98]" href="#">About</a>
-<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Services</a>
-<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Portfolio</a>
-</div>
-<div class="hidden md:block">
-<button class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-DEFAULT hover:bg-tertiary transition-colors font-label-caps text-label-caps font-bold uppercase">
-                    Get a Mockup
-                </button>
-</div>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
-<main class="flex-grow">
-<!-- Hero Section -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-8 py-section-gap">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-<div>
-<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6">
-                        Built for Your Community. Rooted in Local.
-                    </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
-                        We started Origin Local with a simple premise: local business owners—the florists, the accountants, the gym owners—deserve the same high-end digital presence as top-tier tech firms. 
-                    </p>
-</div>
-<div class="relative h-[400px] rounded-xl overflow-hidden shadow-lg border border-border-subtle">
-<img class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A high-quality, professional photograph of a modern construction site or tradesperson at work. The image should feature a close-up of skilled hands working with tools or materials, set against a clean, architectural background. The lighting is crisp and natural, highlighting textures of wood, metal, or concrete. The mood is industrious, reliable, and premium, utilizing a color palette of subtle blues, grays, and natural tones to reflect a modern local service agency's brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY8PRjj2gjTNIZZXOtFq60F0c7diXuiASFtWLLzK27RFLOjRTGWE0Z5eSv0Ie4D4fdIx8VZ7-ODJpxeuvu3vF4NXGsQscQfHcsV5-Sec39cujfnGkbMiSKxW5hJ2QRzd9f1K6QpVu8eGTbSfRKAKrsrKgK2mOdXGlRhLicdEK4meNQ6yKnek7adEQ1J04wkc8zX7ribM5pgvPn6sutsB50vOPz9kzhhUnf1dyj6J-vC75RYn45ntJD"/>
-</div>
-</div>
-</section>
-<!-- Mission Section -->
-<section class="bg-surface-container-lowest text-on-surface py-section-gap px-margin-mobile md:px-8 border-y border-border-subtle">
-<div class="max-w-container-max mx-auto text-center">
-<h2 class="font-headline-md text-headline-md mb-8">Our Mission</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
-                    To modernize the digital infrastructure of essential local services. We bridge the gap between traditional craftsmanship and contemporary web design, ensuring that when someone needs reliable local help, they find a professional, trustworthy presence that reflects the quality of the work itself.
-                </p>
-</div>
-</section>
-<!-- Timeline / Roots -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-8 py-section-gap">
-<div class="mb-gutter text-center">
-<h2 class="font-headline-md text-headline-md text-on-surface mb-12">Local Roots</h2>
-</div>
-<div class="space-y-12 max-w-4xl mx-auto">
-<!-- Timeline Item 1 -->
-<div class="flex flex-col md:flex-row gap-8 items-start">
-<div class="md:w-1/4 pt-2 border-t-2 border-tertiary-fixed">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">The Beginning</span>
-<h3 class="font-headline-sm text-headline-sm text-tertiary-fixed mt-2">2018</h3>
-</div>
-<div class="md:w-3/4 bg-surface-container-low p-card-padding rounded-xl border border-border-subtle shadow-md">
-<p class="text-on-surface-variant font-body-md text-body-md">
-                            Recognizing that highly skilled local independent businesses were losing out due to outdated websites, we launched with a focus on simple, robust sites for local startups and established shops. We focused on clarity over clutter.
-                        </p>
-</div>
-</div>
-<!-- Timeline Item 2 -->
-<div class="flex flex-col md:flex-row gap-8 items-start">
-<div class="md:w-1/4 pt-2 border-t-2 border-tertiary-fixed">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Expansion</span>
-<h3 class="font-headline-sm text-headline-sm text-tertiary-fixed mt-2">2021</h3>
-</div>
-<div class="md:w-3/4 bg-surface-container-low p-card-padding rounded-xl border border-border-subtle shadow-md">
-<p class="text-on-surface-variant font-body-md text-body-md">
-                            Expanded our services to include comprehensive digital identity packages for larger contracting firms, including heavy construction and concrete specialists, emphasizing architectural precision in our design language.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full bg-surface-container-lowest border-t border-border-subtle">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-8 py-16 max-w-container-max mx-auto transition-all duration-200">
-<div class="col-span-1 md:col-span-2">
-<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface block mb-4">Origin Local</span>
-<p class="text-on-surface-variant font-body-md text-body-md mt-4 max-w-sm">
-                    © 2024 Origin Local. Architectural Precision for Local Services.
-                </p>
-</div>
-<div class="col-span-1">
-<ul class="space-y-4">
-<li><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed transition-colors uppercase" href="#">Terms of Service</a></li>
-<li><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed transition-colors uppercase" href="#">Privacy Policy</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<ul class="space-y-4">
-<li><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed transition-colors uppercase" href="#">Contact Us</a></li>
-<li><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed transition-colors uppercase" href="#">Careers</a></li>
-</ul>
-</div>
-</div>
-</footer>
-</body></html>
+
+<body class="bg-brand-black text-brand-text font-sans antialiased selection:bg-brand-lime selection:text-brand-black min-h-screen flex flex-col justify-between">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-brand-black/85 backdrop-blur-xl border-b border-brand-border">
+    <div class="bg-brand-card/90 border-b border-brand-border/60 py-2 px-4 text-center text-xs font-mono text-brand-slate flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-brand-emerald animate-ping"></span>
+      <span>Now booking mockups for Northern Colorado contractors — limited slots this month.</span>
+      <a href="/#mockup-section" class="text-brand-lime hover:underline underline-offset-2 ml-1 font-bold">See Your Free Mockup &rarr;</a>
+    </div>
+
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-lime to-brand-emerald flex items-center justify-center font-display font-black text-brand-black text-xl shadow-[0_0_20px_rgba(206,255,0,0.3)] group-hover:scale-105 transition-transform">
+          O
+        </div>
+        <div>
+          <span class="font-display font-black text-xl tracking-tight text-white block leading-none">
+            ORIGIN<span class="text-brand-lime font-mono ml-1">LOCAL</span>
+          </span>
+          <span class="font-mono text-[10px] tracking-widest text-brand-muted uppercase mt-0.5 block">
+            Digital Storefronts for Local Businesses
+          </span>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-brand-slate">
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-brand-lime transition-colors py-2 focus:outline-none">
+            <span>Services</span>
+            <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+          </button>
+          
+          <div class="absolute top-full left-0 w-64 pt-2 hidden group-hover:block transition-all">
+            <div class="glass-card rounded-xl p-3 border border-brand-border shadow-2xl bg-brand-card/95 backdrop-blur-xl flex flex-col gap-1">
+              <a href="/services/website-design.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">Website Design</span>
+                <span class="text-[10px] font-mono text-brand-muted">01</span>
+              </a>
+              <a href="/services/seo-geo.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">SEO-GEO</span>
+                <span class="text-[10px] font-mono text-brand-muted">02</span>
+              </a>
+              <a href="/services/voice-ai.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">Voice AI</span>
+                <span class="text-[10px] font-mono text-brand-muted">03</span>
+              </a>
+              <a href="/services/content-creation.html" class="px-3 py-2 rounded-lg hover:bg-brand-cardHover hover:text-brand-lime flex items-center justify-between transition-colors">
+                <span class="font-medium text-white">Content Creation</span>
+                <span class="text-[10px] font-mono text-brand-muted">04</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/#how-it-works" class="hover:text-brand-lime transition-colors">How It Works</a>
+        <a href="/about.html" class="text-brand-lime font-bold">About Us</a>
+        <a href="/contact.html" class="hover:text-brand-lime transition-colors">Contact</a>
+        
+        <a href="tel:9704022707" class="flex items-center gap-1.5 text-white hover:text-brand-lime transition-colors font-mono text-xs">
+          <span class="material-symbols-outlined text-sm text-brand-lime">call</span>
+          <span>(970) 402-2707</span>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="/#mockup-section" class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-display font-bold text-brand-black bg-brand-lime rounded-lg overflow-hidden shadow-[0_0_25px_rgba(206,255,0,0.25)] hover:shadow-[0_0_35px_rgba(206,255,0,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all">
+          <span>Claim Free Mockup &rarr;</span>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-brand-slate hover:text-white">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-brand-card/95 backdrop-blur-xl border-b border-brand-border px-6 py-4 flex-col gap-3">
+      <div class="text-xs font-mono text-brand-muted uppercase tracking-wider pb-1">Services</div>
+      <a href="/services/website-design.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Website Design
+      </a>
+      <a href="/services/seo-geo.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-muted"></span> SEO-GEO
+      </a>
+      <a href="/services/voice-ai.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-muted"></span> Voice AI
+      </a>
+      <a href="/services/content-creation.html" class="text-sm font-medium text-white hover:text-brand-lime pl-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-muted"></span> Content Creation
+      </a>
+      
+      <div class="pt-3 border-t border-brand-border/60 flex flex-col gap-2">
+        <a href="/" class="text-sm font-medium text-brand-slate hover:text-white">Home</a>
+        <a href="/#how-it-works" class="text-sm font-medium text-brand-slate hover:text-white">How It Works</a>
+        <a href="/about.html" class="text-sm font-bold text-brand-lime">About Us</a>
+        <a href="/contact.html" class="text-sm font-medium text-brand-slate hover:text-white">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-36 pb-24 bg-mesh-glow relative overflow-hidden flex-grow">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border text-xs font-mono text-brand-lime mb-4">
+          <span>ROOTED IN COLORADO</span>
+        </div>
+        <h1 class="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight leading-tight">
+          Built For Your Community. <span class="text-brand-lime">Rooted in Local.</span>
+        </h1>
+        <p class="text-base sm:text-lg text-brand-slate mt-4 leading-relaxed">
+          We started Origin Local with a simple premise: local business owners deserve the same high-end, speed-optimized digital presence as top-tier tech firms. 
+        </p>
+      </div>
+
+      <!-- Mission Section -->
+      <div class="glass-card rounded-2xl p-8 sm:p-12 border-brand-border mb-16">
+        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mb-4">Our Mission</h2>
+        <p class="text-brand-slate text-base sm:text-lg leading-relaxed">
+          To modernize the digital infrastructure of essential local services. We bridge the gap between traditional craftsmanship and contemporary web engineering, ensuring that when someone in your community needs reliable local help, they find a fast, professional, trustworthy business that reflects the quality of the work itself.
+        </p>
+      </div>
+
+      <!-- Core Values / Philosophy -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="glass-card rounded-xl p-6 border-brand-border">
+          <div class="font-display font-bold text-lg text-white mb-2">Clarity Over Clutter</div>
+          <p class="text-xs text-brand-slate leading-relaxed">No bloated animations, slow plugins, or confusing layouts. Just clean, fast digital storefronts that make the phone ring.</p>
+        </div>
+
+        <div class="glass-card rounded-xl p-6 border-brand-border">
+          <div class="font-display font-bold text-lg text-white mb-2">Build Before You Pay</div>
+          <p class="text-xs text-brand-slate leading-relaxed">We don't ask for a deposit before you see your site. We build your working 48-hour mobile preview first so you see the value upfront.</p>
+        </div>
+
+        <div class="glass-card rounded-xl p-6 border-brand-border">
+          <div class="font-display font-bold text-lg text-white mb-2">Full Digital Partnership</div>
+          <p class="text-xs text-brand-slate leading-relaxed">From sub-second websites to AI search visibility and 24/7 call answering, we handle the entire digital front door.</p>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="glass-card rounded-3xl p-10 border-brand-lime/30 text-center bg-gradient-to-b from-brand-card to-brand-black">
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+          Ready To Upgrade Your <span class="text-brand-lime">Digital Storefront?</span>
+        </h2>
+        <p class="text-brand-slate text-sm sm:text-base max-w-lg mx-auto mt-3">
+          See a custom mobile mockup of your business in 48 hours with zero obligation.
+        </p>
+        <div class="mt-8">
+          <a href="/#mockup-section" class="inline-block px-8 py-4 bg-brand-lime text-brand-black font-display font-extrabold text-base rounded-xl shadow-[0_0_30px_rgba(206,255,0,0.3)] hover:scale-105 transition-all">
+            Claim Your Free Mockup &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-black border-t border-brand-border py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-brand-lime text-brand-black font-display font-black flex items-center justify-center text-sm">
+          O
+        </div>
+        <span class="font-display font-extrabold text-white text-base">ORIGIN LOCAL</span>
+        <span class="text-brand-muted text-xs font-mono">Origin Local © 2026. Built in Colorado.</span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 text-xs font-mono text-brand-slate">
+        <a href="/about.html" class="text-brand-lime font-bold">About Us</a>
+        <a href="/contact.html" class="hover:text-brand-lime transition-colors">Contact</a>
+        <a href="mailto:hello@originlocalco.com" class="hover:text-brand-lime transition-colors">hello@originlocalco.com</a>
+        <a href="tel:9704022707" class="text-white hover:text-brand-lime font-bold transition-colors">(970) 402-2707</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    }
+  </script>
+</body>
+</html>
