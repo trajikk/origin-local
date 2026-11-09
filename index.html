@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Origin Local — Digital Storefronts & 24/7 Voice AI for Local Businesses</title>
-  <meta name="description" content="We build high-converting, mobile-first websites and install instant Speed-to-Lead systems. 24/7 AI Voice Receptionist, Missed-Call Text Back, and Google Reviews under one roof." />
+  <title>Origin Digital — AI Front Desk for Local Service Businesses | Fort Collins, CO</title>
+  <meta name="description" content="My AI receptionist Skye answers every call, texts back every missed call in 60 seconds, and books straight to the calendar. Built for one-owner, one-shop local service businesses." />
 
-  <!-- Tailwind CSS CDN with plugins -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Archivo (700/800) & Inter (400/500/600/700) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script id="tailwind-config">
     tailwind.config = {
@@ -21,46 +20,15 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              black: "#070709",
-              dark: "#0D0D11",
-              card: "#121217",
-              cardHover: "#191921",
-              border: "#23232E",
-              borderLight: "#343444",
-              lime: "#CEFF00",
-              limeGlow: "rgba(206, 255, 0, 0.28)",
-              limeMuted: "rgba(206, 255, 0, 0.12)",
-              emerald: "#10B981",
-              slate: "#94A3B8",
-              muted: "#64748B",
-              text: "#F8FAFC"
-            }
+            page: "#070C0C",
+            card: "#10131A",
+            lime: "#CEFF00",
+            body: "#CBD5E0",
+            borderDark: "#1E2430"
           },
           fontFamily: {
-            display: ["'Hanken Grotesk'", "sans-serif"],
-            sans: ["'Inter'", "sans-serif"],
-            mono: ["'JetBrains Mono'", "monospace"]
-          },
-          animation: {
-            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'float': 'float 6s ease-in-out infinite',
-            'glow': 'glow 3s ease-in-out infinite alternate',
-            'wave': 'wave 1.2s ease-in-out infinite alternate'
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-8px)' }
-            },
-            glow: {
-              '0%': { boxShadow: '0 0 20px rgba(206, 255, 0, 0.15)' },
-              '100%': { boxShadow: '0 0 45px rgba(206, 255, 0, 0.45)' }
-            },
-            wave: {
-              '0%': { height: '12px' },
-              '100%': { height: '36px' }
-            }
+            heading: ["'Archivo'", "sans-serif"],
+            sans: ["'Inter'", "sans-serif"]
           }
         }
       }
@@ -68,52 +36,34 @@
   </script>
 
   <style>
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #070709; }
-    ::-webkit-scrollbar-thumb { background: #23232E; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #CEFF00; }
-
-    /* Mesh Glow Backgrounds */
-    .bg-mesh-dark {
-      background-color: #070709;
-      background-image: 
-        radial-gradient(at 50% 0%, rgba(206, 255, 0, 0.12) 0px, transparent 50%),
-        radial-gradient(at 100% 30%, rgba(59, 130, 246, 0.08) 0px, transparent 40%),
-        radial-gradient(at 0% 70%, rgba(16, 185, 129, 0.06) 0px, transparent 40%),
-        radial-gradient(at 50% 100%, rgba(206, 255, 0, 0.06) 0px, transparent 50%);
+    body {
+      background-color: #070C0C;
+      color: #CBD5E0;
+      font-family: 'Inter', sans-serif;
     }
-
-    .glass-card {
-      background: rgba(18, 18, 23, 0.75);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+    h1, h2, h3, h4 {
+      font-family: 'Archivo', sans-serif;
+      color: #FFFFFF;
     }
-
-    .glass-card-active {
-      background: rgba(22, 22, 30, 0.9);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(206, 255, 0, 0.4);
-      box-shadow: 0 0 35px rgba(206, 255, 0, 0.18);
+    .btn-lime {
+      background-color: #CEFF00;
+      color: #000000;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      transition: transform 0.15s ease, filter 0.15s ease;
     }
-
-    .glass-pill {
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+    .btn-lime:hover {
+      filter: brightness(1.06);
+      transform: translateY(-1px);
     }
-
-    /* Range slider custom styling */
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      height: 22px;
-      width: 22px;
-      border-radius: 50%;
-      background: #CEFF00;
-      cursor: pointer;
-      box-shadow: 0 0 15px rgba(206, 255, 0, 0.7);
-      border: 2px solid #070709;
+    .card-surface {
+      background-color: #10131A;
+      border: 1px solid #1E2430;
+    }
+    .card-surface-lime {
+      background-color: #10131A;
+      border: 1px solid rgba(206, 255, 0, 0.45);
     }
   </style>
 
@@ -125,612 +75,539 @@
   </script>
 </head>
 
-<body class="bg-brand-black text-brand-text font-sans antialiased selection:bg-brand-lime selection:text-brand-black min-h-screen relative overflow-x-hidden">
+<body class="bg-page text-body font-sans antialiased selection:bg-lime selection:text-black min-h-screen">
 
-  <!-- TOP NAV BAR -->
-  <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-brand-border/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
-      <!-- LOGO -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-brand-lime flex items-center justify-center text-brand-black font-black font-display text-xl tracking-tighter shadow-lg shadow-brand-lime/20 group-hover:scale-105 transition-transform duration-300">
-          OL
+  <!-- TOP NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-page/95 backdrop-blur border-b border-borderDark">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-lime flex items-center justify-center text-black font-heading font-extrabold text-lg">
+          OD
         </div>
         <div>
-          <div class="font-display font-black text-lg tracking-tight text-white flex items-center gap-1.5">
-            ORIGIN LOCAL
-            <span class="w-2 h-2 rounded-full bg-brand-lime animate-ping"></span>
+          <div class="font-heading font-extrabold text-white text-lg tracking-tight leading-none">
+            ORIGIN DIGITAL
           </div>
-          <p class="text-[10px] font-mono text-brand-slate uppercase tracking-widest">Fort Collins, Colorado</p>
+          <div class="text-xs text-body mt-0.5">Fort Collins, CO</div>
         </div>
       </a>
 
-      <!-- NAVIGATION LINKS -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-slate">
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-body">
+        <a href="#the-leak" class="hover:text-white transition-colors">The Leak</a>
         <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
-        <a href="#voice-ai" class="hover:text-brand-lime transition-colors flex items-center gap-1">
-          <span class="material-symbols-outlined text-[16px] text-brand-lime">mic</span>
-          Voice AI Live Demo
-        </a>
-        <a href="#calculator" class="hover:text-white transition-colors">ROI Calculator</a>
-        <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
-        <a href="#reviews" class="hover:text-white transition-colors">Case Studies</a>
+        <a href="#live-demo" class="hover:text-white transition-colors">Live Demo</a>
+        <a href="#niche-demos" class="hover:text-white transition-colors">Niche Demos</a>
+        <a href="#the-offer" class="hover:text-white transition-colors">The Offer</a>
+        <a href="#audit" class="hover:text-white transition-colors">2-Page Audit</a>
       </nav>
 
-      <!-- TOP CTA BUTTONS -->
-      <div class="flex items-center gap-3">
-        <button onclick="openVoiceModal()" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-mono uppercase tracking-wider text-brand-lime bg-brand-lime/10 border border-brand-lime/30 hover:bg-brand-lime/20 transition-all">
-          <span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
-          Talk to Sarah
-        </button>
-        <a href="#claim-form" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-brand-black bg-brand-lime hover:bg-white hover:shadow-lg hover:shadow-brand-lime/30 transition-all duration-300 transform active:scale-95">
-          <span>Claim Free Mockup</span>
-          <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
-        </a>
-      </div>
-
+      <a href="tel:+19704017897" class="btn-lime px-4 py-2.5 rounded-lg text-xs sm:text-sm inline-flex items-center gap-2">
+        <span>Hear Your Demo</span>
+      </a>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 bg-mesh-dark overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-      
-      <!-- LIVE STATUS PILL -->
-      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-pill mb-8 animate-float">
-        <span class="flex h-2.5 w-2.5 relative">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-lime opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-lime"></span>
-        </span>
-        <span class="text-xs font-mono tracking-wider uppercase text-brand-slate">
-          Northern Colorado Speed-to-Lead Engine
-        </span>
-      </div>
+  <main>
 
-      <!-- MAIN HEADLINE -->
-      <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white max-w-5xl mx-auto leading-[1.08] mb-8">
-        We build your website for <span class="text-brand-lime underline decoration-brand-lime/40 decoration-wavy underline-offset-8">FREE</span>.<br/>
-        Then make sure <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-slate to-white">every call gets answered 24/7.</span>
-      </h1>
-
-      <!-- SUBHEADLINE -->
-      <p class="text-lg sm:text-xl text-brand-slate max-w-3xl mx-auto font-normal leading-relaxed mb-10">
-        Over <strong class="text-white font-semibold">62% of incoming calls to local contractors go to voicemail</strong>. 85% of those callers immediately hire your competitor. We install instant <strong class="text-brand-lime font-semibold">Missed-Call Text Back</strong> and <strong class="text-brand-lime font-semibold">24/7 AI Voice Receptionists</strong> so you never lose a job again.
-      </p>
-
-      <!-- DUAL ACTION BUTTONS -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-16">
-        <a href="#claim-form" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-brand-lime text-brand-black font-display font-black text-base tracking-wide flex items-center justify-center gap-3 shadow-xl shadow-brand-lime/25 hover:bg-white hover:scale-105 transition-all duration-300">
-          <span>CLAIM FREE 48-HR MOCKUP</span>
-          <span class="material-symbols-outlined font-black text-xl">rocket_launch</span>
-        </a>
-        <button onclick="openVoiceModal()" class="w-full sm:w-auto px-7 py-4 rounded-2xl glass-card text-white font-display font-bold text-base tracking-wide flex items-center justify-center gap-3 border border-brand-border hover:border-brand-lime/60 hover:bg-brand-cardHover transition-all duration-300">
-          <span class="material-symbols-outlined text-brand-lime">mic</span>
-          <span>TALK TO SARAH (LIVE AI)</span>
-        </button>
-      </div>
-
-      <!-- TRUST STATS GRID -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-brand-border/60">
-        <div class="glass-card p-4 rounded-2xl">
-          <div class="font-display font-black text-2xl sm:text-3xl text-brand-lime">&lt; 15s</div>
-          <div class="text-xs font-mono text-brand-slate uppercase mt-1">Speed to Lead</div>
+    <!-- 1. HERO -->
+    <section class="py-20 sm:py-28 border-b border-borderDark">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-block px-3.5 py-1.5 rounded-full card-surface text-xs font-semibold uppercase tracking-wider text-lime mb-6">
+          AI Front Desk for Local Service Businesses
         </div>
-        <div class="glass-card p-4 rounded-2xl">
-          <div class="font-display font-black text-2xl sm:text-3xl text-white">24/7/365</div>
-          <div class="text-xs font-mono text-brand-slate uppercase mt-1">Voice AI Reception</div>
-        </div>
-        <div class="glass-card p-4 rounded-2xl">
-          <div class="font-display font-black text-2xl sm:text-3xl text-brand-lime">+48%</div>
-          <div class="text-xs font-mono text-brand-slate uppercase mt-1">Lead Conversion</div>
-        </div>
-        <div class="glass-card p-4 rounded-2xl">
-          <div class="font-display font-black text-2xl sm:text-3xl text-white">$0 Down</div>
-          <div class="text-xs font-mono text-brand-slate uppercase mt-1">Upfront Web Build</div>
-        </div>
-      </div>
 
-    </div>
-  </section>
+        <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6">
+          Your customers don't call at 2pm on a Tuesday. They call at 9pm on their phone. If nobody answers, the shop down the street books them.
+        </h1>
 
-  <!-- LIVE VOICE AI DEMO SHOWCASE SECTION -->
-  <section id="voice-ai" class="py-24 bg-brand-dark border-y border-brand-border relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-lime text-xs font-mono uppercase tracking-widest mb-4">
-          Interactive Voice Demo
-        </div>
-        <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
-          Test Our 24/7 AI Voice Receptionist Right Now
-        </h2>
-        <p class="text-brand-slate text-base sm:text-lg mt-4">
-          Meet Sarah. She answers phone calls, qualifies customer needs, quotes service guidelines, and books appointments onto your calendar in real time.
+        <p class="text-lg sm:text-xl text-body max-w-3xl mx-auto leading-relaxed mb-8">
+          My AI receptionist <strong class="text-white font-semibold">Skye</strong> answers every call, texts back every missed call in 60 seconds, and books straight to the calendar. Built for nail salons, barbers, plumbers, HVAC, med spas, dental offices, auto repair shops, and chiropractors — one owner, one shop, answering your own phone.
         </p>
+
+        <div class="flex flex-col items-center justify-center gap-3">
+          <a href="tel:+19704017897" class="btn-lime px-8 py-4 rounded-xl text-base sm:text-lg inline-flex items-center gap-3">
+            <span>Hear your demo</span>
+            <span class="font-normal text-black/80 text-sm sm:text-base">• +1 (970) 401-7897</span>
+          </a>
+          <p class="text-xs text-body">Tap to dial Skye live on your phone right now.</p>
+        </div>
       </div>
+    </section>
 
-      <!-- VOICE AI INTERACTIVE CONSOLE -->
-      <div class="max-w-4xl mx-auto glass-card-active rounded-3xl p-6 sm:p-10 relative overflow-hidden">
-        <div class="flex flex-col md:flex-row items-center gap-8 justify-between">
-          
-          <!-- AGENT AVATAR & AUDIO VISUALIZER -->
-          <div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-            <div class="relative">
-              <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-brand-lime to-emerald-400 p-1 shadow-2xl shadow-brand-lime/30">
-                <img src="/avatar.jpg" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80'" alt="Sarah AI Receptionist" class="w-full h-full object-cover rounded-[22px]"/>
-              </div>
-              <span class="absolute -bottom-2 -right-2 bg-brand-black border-2 border-brand-lime text-brand-lime text-[10px] font-mono px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">
-                Online
-              </span>
-            </div>
-            <div>
-              <div class="flex items-center justify-center sm:justify-start gap-2 mb-1">
-                <h3 class="font-display font-black text-2xl text-white">Sarah</h3>
-                <span class="px-2 py-0.5 rounded bg-brand-border text-brand-slate text-[11px] font-mono uppercase">AI Assistant</span>
-              </div>
-              <p class="text-sm text-brand-slate">Origin Local Lead Intake & Appointment Coordinator</p>
-              <div class="flex items-center justify-center sm:justify-start gap-1.5 mt-3 text-brand-lime text-xs font-mono">
-                <span class="material-symbols-outlined text-[16px]">record_voice_over</span>
-                <span>Latency: 450ms • Ultra-Natural Voice</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- LAUNCH LIVE WEB CALL BUTTON -->
-          <div class="w-full md:w-auto flex flex-col items-center sm:items-end gap-3">
-            <button onclick="openVoiceModal()" class="w-full sm:w-auto px-8 py-5 rounded-2xl bg-brand-lime text-brand-black font-display font-black text-lg tracking-wide flex items-center justify-center gap-3 shadow-2xl shadow-brand-lime/30 hover:bg-white hover:scale-105 transition-all">
-              <span class="material-symbols-outlined text-2xl">call</span>
-              <span>START LIVE VOICE CALL</span>
-            </button>
-            <p class="text-[11px] font-mono text-brand-slate text-center">Uses your browser microphone • Zero install</p>
-          </div>
-
+    <!-- 2. THE LEAK -->
+    <section id="the-leak" class="py-20 sm:py-24 border-b border-borderDark">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <div class="text-xs font-bold uppercase tracking-widest text-lime mb-2">The Leak</div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            The math, in your numbers.
+          </h2>
+          <p class="text-base sm:text-lg text-body mt-3">
+            When your hands are in a sink, under a hood, with a patient, or eating dinner, the phone goes to voicemail. Here is how that adds up:
+          </p>
         </div>
 
-        <!-- SIMULATED CONVERSATION EXAMPLES -->
-        <div class="mt-10 pt-8 border-t border-brand-border/60 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="bg-brand-black/60 p-4 rounded-2xl border border-brand-border/40">
-            <div class="text-xs font-mono text-brand-lime uppercase tracking-wider mb-1">Inbound Scenario 1</div>
-            <div class="text-sm font-semibold text-white">Emergency Water Leak</div>
-            <p class="text-xs text-brand-slate mt-2 italic">"Sarah identifies urgent pipe burst, collects home address, and transfers immediately to on-call tech."</p>
-          </div>
-          <div class="bg-brand-black/60 p-4 rounded-2xl border border-brand-border/40">
-            <div class="text-xs font-mono text-brand-lime uppercase tracking-wider mb-1">Inbound Scenario 2</div>
-            <div class="text-sm font-semibold text-white">Roof Estimate Scheduling</div>
-            <p class="text-xs text-brand-slate mt-2 italic">"Sarah checks contractor Google Calendar in real-time and books a Thursday 10:00 AM inspection."</p>
-          </div>
-          <div class="bg-brand-black/60 p-4 rounded-2xl border border-brand-border/40">
-            <div class="text-xs font-mono text-brand-lime uppercase tracking-wider mb-1">Inbound Scenario 3</div>
-            <div class="text-sm font-semibold text-white">After-Hours Pricing Inquiry</div>
-            <p class="text-xs text-brand-slate mt-2 italic">"Sarah answers pricing guidelines at 11:30 PM, captures lead contact info, and sends instant SMS recap."</p>
+        <!-- Formula Bar -->
+        <div class="card-surface-lime rounded-2xl p-6 sm:p-8 mb-8">
+          <div class="text-xs font-bold uppercase tracking-wider text-lime mb-3">The Formula</div>
+          <div class="font-heading font-extrabold text-xl sm:text-2xl md:text-3xl text-white leading-snug">
+            Missed Calls &times; Close Rate &times; Average Job Value = <span class="text-lime">Money Walking Away</span>
           </div>
         </div>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- INTERACTIVE REVENUE LEAK CALCULATOR -->
-  <section id="calculator" class="py-24 bg-brand-black relative">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-border text-brand-slate text-xs font-mono uppercase tracking-widest mb-4">
-          Lost Revenue Calculator
-        </div>
-        <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
-          How Much Revenue Are You Losing To Voicemail?
-        </h2>
-        <p class="text-brand-slate text-base sm:text-lg mt-4">
-          Drag the sliders below to see the estimated revenue leaking out of your business every single month.
-        </p>
-      </div>
-
-      <div class="glass-card rounded-3xl p-6 sm:p-12 border border-brand-border">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <!-- SLIDERS -->
-          <div class="lg:col-span-7 space-y-8">
-            
-            <!-- Slider 1: Monthly Calls -->
-            <div>
-              <div class="flex justify-between items-center mb-3">
-                <label class="text-sm font-semibold text-white">Estimated Monthly Inbound Calls</label>
-                <span id="calls-display" class="font-mono font-bold text-brand-lime text-lg">120 Calls</span>
-              </div>
-              <input type="range" id="calls-slider" min="30" max="500" value="120" step="10" class="w-full h-2 bg-brand-border rounded-lg appearance-none cursor-pointer" oninput="calculateROI()"/>
-              <div class="flex justify-between text-[11px] font-mono text-brand-slate mt-1.5">
-                <span>30 calls/mo</span>
-                <span>500 calls/mo</span>
-              </div>
-            </div>
-
-            <!-- Slider 2: Average Job Value -->
-            <div>
-              <div class="flex justify-between items-center mb-3">
-                <label class="text-sm font-semibold text-white">Average Ticket / Job Value</label>
-                <span id="ticket-display" class="font-mono font-bold text-brand-lime text-lg">$1,500</span>
-              </div>
-              <input type="range" id="ticket-slider" min="200" max="10000" value="1500" step="100" class="w-full h-2 bg-brand-border rounded-lg appearance-none cursor-pointer" oninput="calculateROI()"/>
-              <div class="flex justify-between text-[11px] font-mono text-brand-slate mt-1.5">
-                <span>$200</span>
-                <span>$10,000+</span>
-              </div>
-            </div>
-
-            <div class="p-4 rounded-2xl bg-brand-card border border-brand-border/60 text-xs text-brand-slate leading-relaxed">
-              <strong class="text-white">Industry Benchmarks:</strong> 62% of calls to contractors go unanswered. 85% of those callers hire a competitor immediately. Origin Local's Speed-to-Lead rescues an average of 35% of those lost opportunities.
-            </div>
-
+        <!-- Simple Worked Example -->
+        <div class="card-surface rounded-2xl p-6 sm:p-8">
+          <div class="text-xs font-bold uppercase tracking-wider text-white mb-6">
+            Simple Worked Example
           </div>
 
-          <!-- CALCULATION RESULTS CARD -->
-          <div class="lg:col-span-5 glass-card-active p-8 rounded-3xl text-center flex flex-col justify-between">
-            <div>
-              <div class="text-xs font-mono uppercase tracking-widest text-brand-slate mb-2">Estimated Recovered Revenue</div>
-              <div id="recovered-revenue" class="font-display font-black text-4xl sm:text-5xl text-brand-lime my-2">$39,060</div>
-              <div class="text-xs font-mono text-emerald-400 font-bold uppercase tracking-wider">Per Year Added To Your Bottom Line</div>
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center text-center sm:text-left">
+            <div class="p-4 rounded-xl bg-page border border-borderDark">
+              <div class="text-xs uppercase text-body">Missed Calls / Month</div>
+              <div class="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1">20 calls</div>
+              <div class="text-xs text-body mt-1">Roughly 5 a week</div>
             </div>
 
-            <div class="my-6 py-6 border-y border-brand-border/80 space-y-3 text-left text-xs text-brand-slate">
-              <div class="flex justify-between">
-                <span>Monthly Missed Calls:</span>
-                <strong id="missed-calls-count" class="text-white font-mono">74 calls</strong>
-              </div>
-              <div class="flex justify-between">
-                <span>Rescued Jobs / Month:</span>
-                <strong id="rescued-jobs-count" class="text-brand-lime font-mono">2.2 jobs</strong>
-              </div>
-              <div class="flex justify-between">
-                <span>Estimated Monthly ROI:</span>
-                <strong id="monthly-roi" class="text-emerald-400 font-mono">6.5x</strong>
-              </div>
+            <div class="p-4 rounded-xl bg-page border border-borderDark">
+              <div class="text-xs uppercase text-body">&times; Close Rate</div>
+              <div class="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1">30%</div>
+              <div class="text-xs text-body mt-1">6 jobs that would have booked</div>
             </div>
 
-            <a href="#claim-form" class="w-full py-3.5 rounded-xl bg-brand-lime text-brand-black font-display font-bold text-sm tracking-wide flex items-center justify-center gap-2 hover:bg-white transition-all">
-              <span>Plug Your Revenue Leaks Now</span>
-              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            <div class="p-4 rounded-xl bg-page border border-borderDark">
+              <div class="text-xs uppercase text-body">&times; Average Job Value</div>
+              <div class="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1">$250</div>
+              <div class="text-xs text-body mt-1">Per visit or service ticket</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-page border border-lime">
+              <div class="text-xs uppercase text-lime font-bold">= Money Walking Away</div>
+              <div class="font-heading font-extrabold text-2xl sm:text-3xl text-lime mt-1">$1,500 / mo</div>
+              <div class="text-xs text-white mt-1">$18,000 over 12 months</div>
+            </div>
+          </div>
+
+          <p class="text-sm text-body mt-6 pt-5 border-t border-borderDark">
+            <strong class="text-white">Your numbers will differ.</strong> Whether your average ticket is a $65 haircut, a $180 detail, a $400 plumbing repair, or a $1,200 treatment plan, the equation is the same: every unanswered call that would have booked is money walking out the door.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HOW IT WORKS -->
+    <section id="how-it-works" class="py-20 sm:py-24 border-b border-borderDark">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <div class="text-xs font-bold uppercase tracking-widest text-lime mb-2">How It Works</div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Three steps. Nothing for you to babysit.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Step 1 -->
+          <div class="card-surface rounded-2xl p-7">
+            <div class="w-10 h-10 rounded-lg bg-lime text-black font-heading font-extrabold text-lg flex items-center justify-center mb-5">
+              1
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3">
+              Skye answers as your front desk
+            </h3>
+            <p class="text-sm sm:text-base text-body leading-relaxed">
+              When you're with a client, on a job, or closed for the night, Skye picks up the phone using your shop's name, answers common questions about your services and hours, and handles the caller naturally.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="card-surface rounded-2xl p-7">
+            <div class="w-10 h-10 rounded-lg bg-lime text-black font-heading font-extrabold text-lg flex items-center justify-center mb-5">
+              2
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3">
+              Every missed call gets a text back in 60 seconds
+            </h3>
+            <p class="text-sm sm:text-base text-body leading-relaxed">
+              If a caller hangs up before speaking, Skye texts their cell phone within 60 seconds so they stay in a conversation with your shop instead of calling the next listing on Google.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="card-surface rounded-2xl p-7">
+            <div class="w-10 h-10 rounded-lg bg-lime text-black font-heading font-extrabold text-lg flex items-center justify-center mb-5">
+              3
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3">
+              Bookings land straight on your calendar
+            </h3>
+            <p class="text-sm sm:text-base text-body leading-relaxed">
+              Skye checks your real availability, locks in the appointment or estimate time, and sends both you and the customer a confirmation text.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LIVE DEMO -->
+    <section id="live-demo" class="py-20 sm:py-24 border-b border-borderDark">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="text-xs font-bold uppercase tracking-widest text-lime mb-2">Live Demo</div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+            Call Skye now
+          </h2>
+          <p class="text-base sm:text-lg text-body mb-6">
+            Pull out your phone and call the live demo line like you're a customer trying to book an appointment after hours.
+          </p>
+
+          <div class="card-surface-lime rounded-2xl p-8 sm:p-10 mb-8">
+            <div class="text-xs uppercase tracking-widest text-lime font-bold mb-2">Live 24/7 Demo Line</div>
+            <a href="tel:+19704017897" class="block font-heading font-extrabold text-3xl sm:text-5xl md:text-6xl text-white hover:text-lime transition-colors tracking-tight my-3">
+              +1 (970) 401-7897
             </a>
+            <div class="mt-6">
+              <a href="tel:+19704017897" class="btn-lime px-8 py-4 rounded-xl text-sm sm:text-base inline-block">
+                Hear your demo
+              </a>
+            </div>
           </div>
+        </div>
 
+        <!-- PLACEHOLDER 1: 60-Second Recording of a Real Demo Call -->
+        <div class="card-surface rounded-2xl p-6 sm:p-8 mb-8 border border-dashed border-lime/50">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+            <div>
+              <span class="inline-block bg-lime text-black text-[11px] font-bold uppercase px-2.5 py-0.5 rounded mb-2">
+                Audio Placeholder — Replace With Real 60-Second Call Recording
+              </span>
+              <h3 class="font-heading font-bold text-xl text-white">
+                Listen to a 60-second recording of a real demo call with Skye
+              </h3>
+            </div>
+          </div>
+          <!-- Audio Element Slot (Replace src with real recording file when ready) -->
+          <div class="bg-page border border-borderDark rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <audio controls class="w-full" preload="none">
+              <!-- TODO: Replace src="/audio/skye-60s-real-demo-call.mp3" with your real 60s demo call recording -->
+            </audio>
+            <span class="text-xs text-body shrink-0">
+              [Placeholder slot: drop your 60-second real demo call audio file here]
+            </span>
+          </div>
+        </div>
+
+        <!-- PLACEHOLDERS 2 & 3: Calendar Booking Screenshot + Phone Confirmation Text Screenshot -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Screenshot Slot 1: Booking Landing in Calendar -->
+          <figure class="card-surface rounded-2xl p-6 border border-dashed border-lime/50 flex flex-col justify-between">
+            <div>
+              <span class="inline-block bg-lime text-black text-[11px] font-bold uppercase px-2.5 py-0.5 rounded mb-3">
+                Screenshot Placeholder 1
+              </span>
+              <div class="aspect-[16/10] rounded-xl bg-page border border-borderDark flex flex-col items-center justify-center p-6 text-center">
+                <div class="text-sm font-bold text-white mb-1">
+                  [Placeholder Image: Calendar Booking Screenshot]
+                </div>
+                <p class="text-xs text-body max-w-xs">
+                  Replace with real screenshot showing a customer appointment booked by Skye landing directly on the shop calendar.
+                </p>
+              </div>
+            </div>
+            <figcaption class="text-xs sm:text-sm text-body mt-4 pt-3 border-t border-borderDark">
+              <strong class="text-white">On your calendar:</strong> The appointment shows up with the caller's name, phone number, service requested, and time slot.
+            </figcaption>
+          </figure>
+
+          <!-- Screenshot Slot 2: Confirmation Text on a Phone -->
+          <figure class="card-surface rounded-2xl p-6 border border-dashed border-lime/50 flex flex-col justify-between">
+            <div>
+              <span class="inline-block bg-lime text-black text-[11px] font-bold uppercase px-2.5 py-0.5 rounded mb-3">
+                Screenshot Placeholder 2
+              </span>
+              <div class="aspect-[16/10] rounded-xl bg-page border border-borderDark flex flex-col items-center justify-center p-6 text-center">
+                <div class="text-sm font-bold text-white mb-1">
+                  [Placeholder Image: Phone Confirmation Text Screenshot]
+                </div>
+                <p class="text-xs text-body max-w-xs">
+                  Replace with real screenshot showing the SMS booking confirmation text received on a mobile phone.
+                </p>
+              </div>
+            </div>
+            <figcaption class="text-xs sm:text-sm text-body mt-4 pt-3 border-t border-borderDark">
+              <strong class="text-white">On the phone:</strong> Both you and your customer get an instant text confirming the booking details.
+            </figcaption>
+          </figure>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- PRICING TIERS -->
-  <section id="pricing" class="py-24 bg-brand-dark border-t border-brand-border relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-lime text-xs font-mono uppercase tracking-widest mb-4">
-          Transparent Pricing
-        </div>
-        <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
-          Simple, High-ROI Retainers. Zero Lock-In.
-        </h2>
-        <p class="text-brand-slate text-base sm:text-lg mt-4">
-          We prove our value before you ever pay us a dime with our 100% Free Website Mockup.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        
-        <!-- TIER 1: FRONT DOOR FREE TRIAL -->
-        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between hover:border-brand-borderLight transition-all">
-          <div>
-            <div class="text-xs font-mono text-brand-slate uppercase tracking-widest mb-1">Front Door Offer</div>
-            <h3 class="font-display font-black text-2xl text-white">48-Hr Web Mockup</h3>
-            <p class="text-xs text-brand-slate mt-2 mb-6">Complete custom redesign built upfront with zero financial commitment.</p>
-            <div class="flex items-baseline gap-1 mb-8">
-              <span class="font-display font-black text-5xl text-white">$0</span>
-              <span class="text-sm font-mono text-brand-slate">/ 100% Free</span>
-            </div>
-
-            <ul class="space-y-3.5 text-xs text-brand-slate mb-8">
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Custom High-Converting Mobile Website
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Sub-2 Second Page Load Speed
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Click-to-Call & Quote Request Buttons
-              </li>
-              <li class="flex items-center gap-2.5">
-                <span class="material-symbols-outlined text-brand-border text-sm">check_circle</span>
-                14-Day Speed-to-Lead Test Drive
-              </li>
-            </ul>
-          </div>
-          <a href="#claim-form" class="w-full py-3.5 rounded-xl glass-pill text-white font-display font-bold text-sm tracking-wide text-center hover:bg-white/10 transition-all">
-            Claim Free Mockup
-          </a>
-        </div>
-
-        <!-- TIER 2: SPEED TO LEAD CORE (FEATURED) -->
-        <div class="glass-card-active rounded-3xl p-8 flex flex-col justify-between relative transform lg:-translate-y-4">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-lime text-brand-black text-[10px] font-mono font-black px-4 py-1 rounded-full uppercase tracking-widest shadow-md">
-            Most Popular
-          </div>
-          <div>
-            <div class="text-xs font-mono text-brand-lime uppercase tracking-widest mb-1">Core Infrastructure</div>
-            <h3 class="font-display font-black text-2xl text-white">Speed-to-Lead Core</h3>
-            <p class="text-xs text-brand-slate mt-2 mb-6">Plugs missed call leaks with instant SMS and multi-channel inbox.</p>
-            <div class="flex items-baseline gap-1 mb-8">
-              <span class="font-display font-black text-5xl text-brand-lime">$497</span>
-              <span class="text-sm font-mono text-brand-slate">/ month</span>
-            </div>
-
-            <ul class="space-y-3.5 text-xs text-brand-slate mb-8">
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                <strong>Instant Missed-Call Text Back (&lt;15s)</strong>
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Unified SMS, FB, IG & Webchat Mobile App
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Automated 5-Star Google Review Requests
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Mobile Tap-to-Pay Text Invoicing
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Zero Setup Fees • Month-to-Month
-              </li>
-            </ul>
-          </div>
-          <a href="#claim-form" class="w-full py-4 rounded-xl bg-brand-lime text-brand-black font-display font-black text-sm tracking-wide text-center shadow-lg shadow-brand-lime/25 hover:bg-white transition-all">
-            Get Started with Core
-          </a>
-        </div>
-
-        <!-- TIER 3: VOICE AI PRO -->
-        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between hover:border-brand-borderLight transition-all">
-          <div>
-            <div class="text-xs font-mono text-brand-slate uppercase tracking-widest mb-1">Full Autopilot</div>
-            <h3 class="font-display font-black text-2xl text-white">Voice AI Pro</h3>
-            <p class="text-xs text-brand-slate mt-2 mb-6">24/7 conversational voice phone receptionist with live calendar booking.</p>
-            <div class="flex items-baseline gap-1 mb-8">
-              <span class="font-display font-black text-5xl text-white">$897</span>
-              <span class="text-sm font-mono text-brand-slate">/ month</span>
-            </div>
-
-            <ul class="space-y-3.5 text-xs text-brand-slate mb-8">
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                <strong>Everything in Speed-to-Lead Core</strong>
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                <strong>24/7 AI Voice Phone Receptionist</strong>
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Real-Time Google & Outlook Calendar Booking
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Live Human Emergency Call Routing
-              </li>
-              <li class="flex items-center gap-2.5 text-white">
-                <span class="material-symbols-outlined text-brand-lime text-sm">check_circle</span>
-                Custom Prompt & Objection Engineering
-              </li>
-            </ul>
-          </div>
-          <a href="#claim-form" class="w-full py-3.5 rounded-xl glass-pill text-white font-display font-bold text-sm tracking-wide text-center hover:bg-white/10 transition-all">
-            Deploy Voice AI Pro
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- LEAD INTAKE CLAIM FORM (CONNECTED TO GHL) -->
-  <section id="claim-form" class="py-24 bg-brand-black border-t border-brand-border relative">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-lime/10 border border-brand-lime/30 text-brand-lime text-xs font-mono uppercase tracking-widest mb-4">
-          Free 48-Hour Turnaround
-        </div>
-        <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
-          Request Your Free Website Mockup
-        </h2>
-        <p class="text-brand-slate text-base mt-3">
-          Give us 48 hours. We’ll build a custom mobile-first website for your business and send you a 4-minute video walkthrough. No sales pitch, no credit card required.
-        </p>
-      </div>
-
-      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-brand-border">
-        <form id="ghl-intake-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
-          
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-xs font-mono uppercase text-brand-slate mb-2">Your Full Name *</label>
-              <input type="text" required id="form-name" placeholder="John Smith" class="w-full px-4 py-3.5 rounded-xl bg-brand-dark border border-brand-border text-white text-sm focus:border-brand-lime focus:ring-1 focus:ring-brand-lime outline-none transition-all"/>
-            </div>
-            <div>
-              <label class="block text-xs font-mono uppercase text-brand-slate mb-2">Business Name *</label>
-              <input type="text" required id="form-business" placeholder="Smith Roofing & Solar" class="w-full px-4 py-3.5 rounded-xl bg-brand-dark border border-brand-border text-white text-sm focus:border-brand-lime focus:ring-1 focus:ring-brand-lime outline-none transition-all"/>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-xs font-mono uppercase text-brand-slate mb-2">Cell Phone (For Speed-to-Lead Demo) *</label>
-              <input type="tel" required id="form-phone" placeholder="(970) 555-0199" class="w-full px-4 py-3.5 rounded-xl bg-brand-dark border border-brand-border text-white text-sm focus:border-brand-lime focus:ring-1 focus:ring-brand-lime outline-none transition-all"/>
-            </div>
-            <div>
-              <label class="block text-xs font-mono uppercase text-brand-slate mb-2">Email Address *</label>
-              <input type="email" required id="form-email" placeholder="john@smithroofing.com" class="w-full px-4 py-3.5 rounded-xl bg-brand-dark border border-brand-border text-white text-sm focus:border-brand-lime focus:ring-1 focus:ring-brand-lime outline-none transition-all"/>
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-xs font-mono uppercase text-brand-slate mb-2">Current Website URL (or Google Business Profile Link)</label>
-            <input type="text" id="form-website" placeholder="https://smithroofing.com (or 'None')" class="w-full px-4 py-3.5 rounded-xl bg-brand-dark border border-brand-border text-white text-sm focus:border-brand-lime focus:ring-1 focus:ring-brand-lime outline-none transition-all"/>
-          </div>
-
-          <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl bg-brand-lime text-brand-black font-display font-black text-base tracking-wide flex items-center justify-center gap-3 shadow-xl shadow-brand-lime/25 hover:bg-white hover:scale-[1.01] transition-all">
-            <span>BUILD MY FREE 48-HR WEBSITE MOCKUP</span>
-            <span class="material-symbols-outlined font-black">arrow_forward</span>
-          </button>
-
-          <p class="text-[11px] font-mono text-center text-brand-slate">
-            🔒 We respect your privacy. Submitting this form will test our instant 15-second SMS confirmation on your cell phone.
-          </p>
-
-        </form>
-
-        <!-- SUCCESS MESSAGE CONTAINER -->
-        <div id="form-success" class="hidden text-center py-10 space-y-4">
-          <div class="w-16 h-16 rounded-full bg-brand-lime/20 border-2 border-brand-lime text-brand-lime flex items-center justify-center mx-auto">
-            <span class="material-symbols-outlined text-3xl font-bold">check</span>
-          </div>
-          <h3 class="font-display font-black text-2xl text-white">Mockup Request Received!</h3>
-          <p class="text-sm text-brand-slate max-w-md mx-auto">
-            Check your phone! Our Speed-to-Lead system just fired an instant SMS confirmation to you. Fred will begin your custom build and deliver your video in 48 hours.
+    <!-- 5. NICHE DEMOS -->
+    <section id="niche-demos" class="py-20 sm:py-24 border-b border-borderDark">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <div class="text-xs font-bold uppercase tracking-widest text-lime mb-2">Niche Demos</div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            See how it looks for your shop
+          </h2>
+          <p class="text-base sm:text-lg text-body mt-2">
+            Click your industry below to open a live preview in a new tab.
           </p>
         </div>
 
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <a href="https://sites.leadconnectorhq.com/preview/3OtPVNZXtL20UFQIDF6W" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Nail Salon</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/hSz9K4o0t8DKcSaP3wNS" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Barbershop</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/PBrkZH9nmabQk9fb3W0V" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Home Services</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/2dgV4i1wUGd8bRNmfQf5" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Med Spa</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/E4M3rx8KgewHpzRbyZgj" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Dental</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/5tWqEfF22wepEmk0GaTe" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Auto Repair</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/lnJp4YtdFpNlhDd6jR5t" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Auto Detail</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/wvi4qHU0zczhumGtk2Ju" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Lash &amp; Brow</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/GzH1QRv1KfzpgNqZWcDd" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Chiropractic</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://sites.leadconnectorhq.com/preview/GusVZxyDVc05gz3cMZnJ" target="_blank" rel="noopener noreferrer" class="card-surface hover:border-lime rounded-xl p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="text-xs uppercase font-bold text-lime mb-1">Live Preview</div>
+              <h3 class="font-heading font-bold text-lg text-white group-hover:text-lime transition-colors">Pet Care</h3>
+            </div>
+            <div class="text-xs font-bold uppercase text-white mt-4 flex items-center justify-between">
+              <span>Open Demo</span>
+              <span class="text-lime">&rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. THE OFFER -->
+    <section id="the-offer" class="py-20 sm:py-24 border-b border-borderDark">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <div class="text-xs font-bold uppercase tracking-widest text-lime mb-2">The Offer</div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Plain terms. Backed by your bookings.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="card-surface-lime rounded-2xl p-7">
+            <div class="text-xs font-bold uppercase tracking-wider text-lime mb-2">90-Day Booking Guarantee</div>
+            <h3 class="font-heading font-bold text-2xl text-white mb-3">
+              Free month if it doesn't help book one extra job in 90 days.
+            </h3>
+            <p class="text-sm sm:text-base text-body leading-relaxed">
+              If Skye is answering your missed calls and texting back leads and doesn't help put at least one extra paying job on your books within 90 days, your next month is free.
+            </p>
+          </div>
+
+          <div class="card-surface rounded-2xl p-7">
+            <div class="text-xs font-bold uppercase tracking-wider text-lime mb-2">Founding Terms</div>
+            <h3 class="font-heading font-bold text-2xl text-white mb-3">
+              Same-day signups lock in unlimited Voice AI minutes.
+            </h3>
+            <p class="text-sm sm:text-base text-body leading-relaxed">
+              Sign up the same day we review your audit and you lock in Founding terms: unlimited Voice AI minutes for as long as you stay subscribed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. AUDIT CTA -->
+    <section id="audit" class="py-20 sm:py-24 border-b border-borderDark">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <div class="inline-block px-3.5 py-1 rounded-full card-surface text-xs font-bold uppercase tracking-wider text-lime mb-3">
+            Free • $300 Value
+          </div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+            Get your 2-page audit
+          </h2>
+          <p class="text-base sm:text-lg text-body mt-3 max-w-2xl mx-auto leading-relaxed">
+            I check your Google Business Profile, Facebook page, website, booking path, and after-hours call capture — then show you your top 3 leaks and the math for your shop. Free, $300 value.
+          </p>
+        </div>
+
+        <div class="card-surface rounded-2xl p-6 sm:p-10">
+          <form id="audit-form" onsubmit="handleAuditSubmit(event)" class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="audit-name" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">Name *</label>
+                <input type="text" id="audit-name" name="name" required placeholder="Your name"
+                  class="w-full px-4 py-3.5 rounded-xl bg-page border border-borderDark text-white text-sm focus:border-lime focus:ring-1 focus:ring-lime outline-none" />
+              </div>
+
+              <div>
+                <label for="audit-business" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">Business *</label>
+                <input type="text" id="audit-business" name="business" required placeholder="Your shop or business name"
+                  class="w-full px-4 py-3.5 rounded-xl bg-page border border-borderDark text-white text-sm focus:border-lime focus:ring-1 focus:ring-lime outline-none" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="audit-phone" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">Phone *</label>
+                <input type="tel" id="audit-phone" name="phone" required placeholder="(970) 555-0199"
+                  class="w-full px-4 py-3.5 rounded-xl bg-page border border-borderDark text-white text-sm focus:border-lime focus:ring-1 focus:ring-lime outline-none" />
+              </div>
+
+              <div>
+                <label for="audit-website" class="block text-xs font-bold uppercase tracking-wider text-white mb-2">Website</label>
+                <input type="text" id="audit-website" name="website" placeholder="yourshop.com (or leave blank)"
+                  class="w-full px-4 py-3.5 rounded-xl bg-page border border-borderDark text-white text-sm focus:border-lime focus:ring-1 focus:ring-lime outline-none" />
+              </div>
+            </div>
+
+            <button type="submit" id="audit-submit-btn" class="btn-lime w-full py-4 rounded-xl text-sm sm:text-base">
+              Get your 2-page audit
+            </button>
+          </form>
+
+          <div id="audit-success" class="hidden text-center py-8 space-y-3">
+            <div class="w-12 h-12 rounded-full bg-lime text-black font-heading font-extrabold text-xl flex items-center justify-center mx-auto">
+              ✓
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-white">Audit request received</h3>
+            <p class="text-sm text-body max-w-md mx-auto">
+              I'll check your Google, Facebook, website, booking path, and after-hours capture and send over your 2-page audit with your top 3 leaks and the math.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="py-12 bg-page text-sm text-body">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <div class="font-heading font-extrabold text-white text-base">Origin Digital</div>
+        <div class="text-xs text-body mt-0.5">Fort Collins, CO</div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-12 bg-brand-black border-t border-brand-border text-xs text-brand-slate font-mono">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-      <div>
-        <div class="font-display font-black text-white text-sm">ORIGIN LOCAL</div>
-        <p class="text-[11px] text-brand-muted mt-1">Digital Storefronts & 24/7 Speed-to-Lead Systems • Fort Collins, CO</p>
-      </div>
-      <div>
-        <p>© 2026 Origin Local LLC. All rights reserved.</p>
+      <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-xs sm:text-sm">
+        <a href="tel:+19704022707" class="hover:text-lime transition-colors font-medium text-white">
+          (970) 402-2707
+        </a>
+        <a href="mailto:fredcaldero@icloud.com" class="hover:text-lime transition-colors font-medium text-white">
+          fredcaldero@icloud.com
+        </a>
       </div>
     </div>
   </footer>
 
-  <!-- LIVE VOICE AI CALL MODAL -->
-  <div id="voice-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
-    <div class="glass-card-active rounded-3xl p-8 max-w-md w-full text-center relative border border-brand-lime/40 animate-float">
-      
-      <!-- CLOSE BUTTON -->
-      <button onclick="closeVoiceModal()" class="absolute top-4 right-4 text-brand-slate hover:text-white p-2">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-
-      <!-- AGENT ORB ANIMATION -->
-      <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-brand-lime to-emerald-400 p-1 mx-auto my-6 shadow-2xl shadow-brand-lime/50 relative">
-        <img src="/avatar.jpg" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80'" alt="Sarah AI" class="w-full h-full object-cover rounded-full"/>
-        <div class="absolute inset-0 rounded-full border-2 border-brand-lime animate-ping opacity-30"></div>
-      </div>
-
-      <h3 class="font-display font-black text-2xl text-white">Speaking with Sarah</h3>
-      <p class="text-xs font-mono text-brand-lime uppercase tracking-wider mt-1">Origin Local Live Voice AI</p>
-
-      <!-- AUDIO WAVEFORM ANIMATION -->
-      <div id="waveform" class="flex items-center justify-center gap-1.5 h-12 my-6">
-        <div class="w-1.5 bg-brand-lime rounded-full animate-wave" style="animation-delay: 0.1s"></div>
-        <div class="w-1.5 bg-brand-lime rounded-full animate-wave" style="animation-delay: 0.3s"></div>
-        <div class="w-1.5 bg-brand-lime rounded-full animate-wave" style="animation-delay: 0.2s"></div>
-        <div class="w-1.5 bg-brand-lime rounded-full animate-wave" style="animation-delay: 0.5s"></div>
-        <div class="w-1.5 bg-brand-lime rounded-full animate-wave" style="animation-delay: 0.4s"></div>
-        <div class="w-1.5 bg-brand-lime rounded-full animate-wave" style="animation-delay: 0.6s"></div>
-        <div class="w-1.5 bg-brand-lime rounded-full animate-wave" style="animation-delay: 0.2s"></div>
-      </div>
-
-      <p id="voice-status" class="text-xs text-brand-slate italic mb-6">
-        "Hello! Thanks for calling Origin Local. How can I help your business today?"
-      </p>
-
-      <div class="flex gap-3 justify-center">
-        <button onclick="closeVoiceModal()" class="px-6 py-3 rounded-xl bg-red-500/20 text-red-400 border border-red-500/30 font-display font-bold text-xs hover:bg-red-500/30 transition-all flex items-center gap-2">
-          <span class="material-symbols-outlined text-sm">call_end</span>
-          <span>End Call</span>
-        </button>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- JAVASCRIPT LOGIC -->
   <script>
-    function calculateROI() {
-      const calls = parseInt(document.getElementById('calls-slider').value);
-      const ticket = parseInt(document.getElementById('ticket-slider').value);
-
-      document.getElementById('calls-display').innerText = calls + ' Calls';
-      document.getElementById('ticket-display').innerText = '$' + ticket.toLocaleString();
-
-      // Math: 62% missed calls * 85% lost to competitor * 35% rescued by Origin Local
-      const missedCalls = Math.round(calls * 0.62);
-      const rescuedJobsPerMonth = (missedCalls * 0.85 * 0.10).toFixed(1);
-      const monthlyRevenue = Math.round(rescuedJobsPerMonth * ticket);
-      const yearlyRevenue = monthlyRevenue * 12;
-      const monthlyROI = (monthlyRevenue / 497).toFixed(1);
-
-      document.getElementById('missed-calls-count').innerText = missedCalls + ' calls';
-      document.getElementById('rescued-jobs-count').innerText = rescuedJobsPerMonth + ' jobs';
-      document.getElementById('recovered-revenue').innerText = '$' + yearlyRevenue.toLocaleString();
-      document.getElementById('monthly-roi').innerText = monthlyROI + 'x';
-    }
-
-    function openVoiceModal() {
-      document.getElementById('voice-modal').classList.remove('hidden');
-      document.getElementById('voice-modal').classList.add('flex');
-    }
-
-    function closeVoiceModal() {
-      document.getElementById('voice-modal').classList.add('hidden');
-      document.getElementById('voice-modal').classList.remove('flex');
-    }
-
-    async function handleFormSubmit(e) {
+    function handleAuditSubmit(e) {
       e.preventDefault();
-      const btn = document.getElementById('submit-btn');
-      btn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> <span>Submitting...</span>';
+      const btn = document.getElementById('audit-submit-btn');
       btn.disabled = true;
+      btn.textContent = 'SENDING...';
 
       const payload = {
-        name: document.getElementById('form-name').value,
-        business: document.getElementById('form-business').value,
-        phone: document.getElementById('form-phone').value,
-        email: document.getElementById('form-email').value,
-        website: document.getElementById('form-website').value,
+        name: document.getElementById('audit-name').value,
+        business: document.getElementById('audit-business').value,
+        phone: document.getElementById('audit-phone').value,
+        website: document.getElementById('audit-website').value,
         locationId: "PVQDoSjNZl5ZE0BjXcFM",
-        tag: "origin-local-inbound-lead"
+        tag: "origin-digital-2-page-audit"
       };
 
-      try {
-        // Post to GHL Webhook / Zapier endpoint if configured
-        console.log("Intake Lead Payload:", payload);
-      } catch (err) {
-        console.error(err);
-      }
+      console.log("2-Page Audit Request:", payload);
 
       setTimeout(() => {
-        document.getElementById('ghl-intake-form').classList.add('hidden');
-        document.getElementById('form-success').classList.remove('hidden');
-      }, 800);
+        document.getElementById('audit-form').classList.add('hidden');
+        document.getElementById('audit-success').classList.remove('hidden');
+      }, 400);
     }
-
-    // Run initial calculation on load
-    calculateROI();
   </script>
 
 </body>
