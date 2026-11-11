@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live AI Front Desk Demo — Origin Digital (Fort Collins, CO)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #070C0C; color: #CBD5E0; overflow-x: hidden; }
+    h1, h2, h3, .font-heading { font-family: 'Archivo', sans-serif; color: #FFFFFF; }
+    .btn-lime {
+      background-color: #CEFF00;
+      color: #000000;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      transition: transform 0.15s ease, filter 0.15s ease;
+    }
+    .btn-lime:hover { filter: brightness(1.06); transform: translateY(-1px); }
+    .card-surface { background-color: #10131A; border: 1px solid #1E2430; }
+    .card-surface-lime { background-color: #10131A; border: 2px solid rgba(206, 255, 0, 0.55); }
+    .lime-pulse { animation: lime-pulse 2s infinite; }
+    @keyframes lime-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(206, 255, 0, 0.55); }
+      70% { box-shadow: 0 0 0 18px rgba(206, 255, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(206, 255, 0, 0); }
+    }
+  </style>
+
+  <!-- Live LeadConnector Chat & SMS Inbox Widget (GoHighLevel Location: PVQDoSjNZl5ZE0BjXcFM) -->
+  <script 
+    src="https://widgets.leadconnectorhq.com/loader.js" 
+    data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+    data-widget-id="PVQDoSjNZl5ZE0BjXcFM">
+  </script>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+  <!-- TOP PERSONALIZED ALERT BAR -->
+  <div class="bg-[#CEFF00] text-black text-xs sm:text-sm font-extrabold py-2.5 px-4 text-center uppercase tracking-wide">
+    ⚡ LIVE AI FRONT DESK DEMO BUILT FOR: <span id="topCompany" class="underline decoration-2">YOUR SHOP</span> IN <span id="topCity">COLORADO</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="border-b border-[#1E2430] bg-[#070C0C]/95 sticky top-0 z-40 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-[#CEFF00] flex items-center justify-center text-black font-heading font-extrabold text-base">OD</div>
+        <div>
+          <div class="font-heading font-extrabold text-white text-base leading-none">ORIGIN DIGITAL</div>
+          <div class="text-[11px] text-slate-400">Fort Collins, CO • Live Voice AI</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="tel:+19704017897" class="btn-lime px-3.5 py-2 rounded-lg text-xs inline-flex items-center gap-1.5">
+          <span>📞 Call Skye Live: (970) 401-7897</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 w-full">
+
+    <!-- HERO HEADER -->
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-surface text-[#CEFF00] text-xs font-bold uppercase tracking-wider mb-4">
+        <span class="w-2 h-2 rounded-full bg-[#CEFF00] animate-ping"></span>
+        Interactive 2-Step Live Demo • Skye Is Live on +1 (970) 401-7897
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+        Still Sending <span id="heroNiche" class="text-[#CEFF00]">High-Ticket</span> Calls to Voicemail When You're on a Job?
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg">
+        Don't take our word for it. Pretend you're a customer in <strong id="subCity" class="text-white">your city</strong> and call our live AI receptionist <strong class="text-[#CEFF00]">Skye</strong> (Step 1) right now—then unlock Step 2 to see the math for <strong id="subCompany" class="text-white">your shop</strong> and lock in your city.
+      </p>
+    </div>
+
+    <!-- 2-STEP GUIDED INTERACTIVE CARDS -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+
+      <!-- STEP 1: CALL SKYE LIVE AT +1 (970) 401-7897 -->
+      <div id="step1Card" class="card-surface-lime rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-3 py-1 rounded-md bg-[#CEFF00] text-black text-xs font-extrabold uppercase tracking-wider">
+              Step 1: Roleplay as a Customer
+            </span>
+            <span class="text-xs text-[#CEFF00] font-bold">🟢 LIVE 24/7 LINE</span>
+          </div>
+
+          <h2 class="text-2xl font-extrabold text-white mb-2">
+            1. Call "Skye" — Our Live AI Receptionist
+          </h2>
+          <p class="text-slate-300 text-sm mb-5">
+            Tap the button below (or dial <strong class="text-white">+1 (970) 401-7897</strong> on your cell) and roleplay like a customer calling <strong id="card1Company" class="text-[#CEFF00]">your shop</strong> for an estimate or urgent job.
+          </p>
+
+          <!-- ROLEPLAY PROMPT CHEAT SHEET FOR THE CONTRACTOR -->
+          <div class="bg-[#070C0C] border border-[#1E2430] rounded-xl p-4 mb-6">
+            <div class="text-xs font-bold uppercase tracking-wider text-[#CEFF00] mb-2">
+              💬 Try Saying One of These When Skye Picks Up:
+            </div>
+            <ul id="roleplayPrompts" class="space-y-2 text-sm text-slate-200">
+              <li>• <em>"Hi, I need an estimate on a new project at my house this week—do you have any openings?"</em></li>
+              <li>• <em>"Hey, I called two other shops in town and nobody picked up. How soon can someone come look at my job?"</em></li>
+              <li>• <em>"Try interrupting her mid-sentence or asking a curveball question!"</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- REAL TEL LINK TO SKYE (+1 970 401-7897) -->
+        <div class="text-center pt-4 border-t border-[#1E2430] space-y-3">
+          <a href="tel:+19704017897" onclick="completeStep1()" class="btn-lime lime-pulse w-full py-4 px-6 rounded-xl text-base flex items-center justify-center gap-2">
+            <span>📞 Tap to Call Skye Live: (970) 401-7897</span>
+          </a>
+          <p class="text-xs text-slate-400">
+            On a desktop computer? Dial <strong class="text-white">(970) 401-7897</strong> from your cell phone, then <button onclick="completeStep1()" class="text-[#CEFF00] underline font-semibold">click here for Step 2 →</button>
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 2: LIVE ROI MATH + REQUEST CALLBACK / CALL FRED DIRECTLY -->
+      <div id="step2Card" class="card-surface rounded-2xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-3 py-1 rounded-md bg-white/10 text-white text-xs font-extrabold uppercase tracking-wider">
+              Step 2: See Your Math & Claim Your City
+            </span>
+            <span id="step2Badge" class="text-xs text-slate-400 font-bold">⚡ Ready After Your Test Call</span>
+          </div>
+
+          <h2 class="text-2xl font-extrabold text-white mb-2">
+            2. Put Skye on <span id="card2Company" class="text-[#CEFF00]">Your</span> Phone Line & Website
+          </h2>
+          <p class="text-slate-300 text-sm mb-5">
+            See how much missed-call revenue is walking out the door each month, then request an instant callback or call Wilfredo directly at <strong class="text-white">(970) 402-2707</strong>.
+          </p>
+
+          <!-- INTERACTIVE MISSED-CALL ROI CALCULATOR -->
+          <div class="bg-[#070C0C] border border-[#1E2430] rounded-xl p-4 mb-5">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-[#CEFF00]">
+                💰 Missed-Job Revenue Calculator
+              </span>
+              <span class="text-xs text-slate-400">Close Rate: 30%</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-3">
+              <div>
+                <label class="text-xs text-slate-400 block mb-1">Avg. Job Value ($)</label>
+                <input id="jobValueInput" type="number" value="1800" oninput="recalcROI()" class="w-full bg-[#10131A] border border-[#1E2430] rounded-lg px-3 py-1.5 text-white font-bold text-sm" />
+              </div>
+              <div>
+                <label class="text-xs text-slate-400 block mb-1">Missed Calls / Month</label>
+                <input id="missedCallsInput" type="number" value="10" oninput="recalcROI()" class="w-full bg-[#10131A] border border-[#1E2430] rounded-lg px-3 py-1.5 text-white font-bold text-sm" />
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-[#1E2430] text-sm">
+              <span class="text-slate-300">Est. Revenue Walking Away (at 30% close):</span>
+              <span id="lostRevenueOutput" class="text-xl font-extrabold text-[#CEFF00]">$5,400 / mo</span>
+            </div>
+          </div>
+
+          <!-- HONEST CALLBACK / WEBHOOK REQUEST FORM -->
+          <div class="bg-[#070C0C] border border-[#1E2430] rounded-xl p-4 mb-4">
+            <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-2">
+              📲 Have Our Team / AI Call Your Cell to Set Up <span id="formCompany">Your Shop</span>:
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2.5">
+              <input id="outboundName" type="text" placeholder="Your First Name" class="w-full bg-[#10131A] border border-[#1E2430] rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500" />
+              <input id="outboundPhone" type="tel" placeholder="Your Cell (e.g. 303-555-0199)" class="w-full bg-[#10131A] border border-[#1E2430] rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500" />
+            </div>
+            <button onclick="triggerOutboundDemo()" id="outboundBtn" class="btn-lime w-full py-2.5 px-4 rounded-lg text-xs">
+              ⚡ Request Setup Call / Text Confirmation Now →
+            </button>
+            <p id="outboundStatus" class="text-[11px] text-slate-400 text-center mt-1.5">
+              Or use the live chat bubble in the bottom-right corner to text Skye directly.
+            </p>
+          </div>
+        </div>
+
+        <!-- DIRECT CALL / SMS BUTTONS (100% REAL NUMBERS) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-3 border-t border-[#1E2430]">
+          <a href="tel:+19704022707" class="py-3 px-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/15 text-center text-xs font-bold text-white transition">
+            📞 Call Wilfredo Direct: (970) 402-2707
+          </a>
+          <a id="smsTriggerBtn" href="sms:+19704017897?&body=Hey%20Wilfredo%2C%20I%20just%20tested%20Skye%20and%20want%20to%20see%20how%20it%20works%20for%20my%20shop!" class="py-3 px-4 rounded-xl bg-[#CEFF00]/15 hover:bg-[#CEFF00]/25 border border-[#CEFF00]/40 text-center text-xs font-bold text-[#CEFF00] transition">
+            💬 1-Tap Text Us to Claim Your City
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TWO TRANSPARENT TIERS ($999 & $1,499) -->
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card-surface rounded-2xl p-6 sm:p-7">
+        <div class="text-xs font-bold uppercase tracking-wider text-[#CEFF00] mb-1">Tier 1 • Inbound Defense</div>
+        <div class="flex items-baseline justify-between mb-3">
+          <h3 class="text-xl font-extrabold text-white">24/7 AI Front Desk</h3>
+          <div class="text-right">
+            <span class="text-2xl font-extrabold text-white">$999</span><span class="text-xs text-slate-400">/mo + $999 setup</span>
+          </div>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Skye answers every call 24/7 as your business, texts back missed calls in under 60 seconds, captures website chat leads, chases unsigned estimates, and automates 5-star Google reviews.
+        </p>
+      </div>
+
+      <div class="card-surface-lime rounded-2xl p-6 sm:p-7">
+        <div class="text-xs font-bold uppercase tracking-wider text-[#CEFF00] mb-1">Tier 2 • Full Offense + Website Included</div>
+        <div class="flex items-baseline justify-between mb-3">
+          <h3 class="text-xl font-extrabold text-white">Autonomous Revenue OS</h3>
+          <div class="text-right">
+            <span class="text-2xl font-extrabold text-[#CEFF00]">$1,499</span><span class="text-xs text-slate-400">/mo + $1,499 setup</span>
+          </div>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Everything in the AI Front Desk PLUS instant outbound AI callbacks for website quote leads, monthly AI reactivation of your old unclosed estimates, Facebook/IG DM automation, and a custom sub-second website included free.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-center text-xs text-slate-500 py-6 border-t border-[#1E2430]">
+    Origin Digital • Fort Collins, CO • Direct: (970) 402-2707 • Live AI Demo Line: (970) 401-7897
+  </footer>
+
+  <!-- DYNAMIC URL PERSONALIZATION SCRIPT -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const company = params.get('company') || 'Your Shop';
+    const city = params.get('city') || 'Colorado';
+    const niche = params.get('niche') || 'Service';
+
+    document.getElementById('topCompany').textContent = company;
+    document.getElementById('topCity').textContent = city;
+    document.getElementById('heroNiche').textContent = niche;
+    document.getElementById('subCity').textContent = city;
+    document.getElementById('subCompany').textContent = company;
+    document.getElementById('card1Company').textContent = company;
+    document.getElementById('card2Company').textContent = company;
+    document.getElementById('formCompany').textContent = company;
+
+    // Pre-fill 1-Tap SMS body with exact Company Name & City
+    const smsBody = encodeURIComponent(`Hey Wilfredo, I just tested the Skye AI demo for ${company} in ${city} (${niche}) and want to see how setup works!`);
+    document.getElementById('smsTriggerBtn').href = `sms:+19704017897?&body=${smsBody}`;
+
+    // Customize default job value & prompts by niche
+    const nLow = niche.toLowerCase();
+    const jobInput = document.getElementById('jobValueInput');
+    const promptList = document.getElementById('roleplayPrompts');
+
+    if (nLow.includes('fence') || nLow.includes('fencing')) {
+      jobInput.value = 3500;
+      promptList.innerHTML = `
+        <li>• <em>"Hi, I need a quote on 150 feet of cedar privacy fencing at my house in ${city}."</em></li>
+        <li>• <em>"Hey, wind blew down two sections of my fence—how soon can someone come give me an estimate?"</em></li>
+      `;
+    } else if (nLow.includes('concrete') || nLow.includes('foundation') || nLow.includes('epoxy')) {
+      jobInput.value = 4800;
+      promptList.innerHTML = `
+        <li>• <em>"Hi, I'm looking to get a stamped concrete patio and driveway extension quoted in ${city}."</em></li>
+        <li>• <em>"Hey, I have a crack in my foundation wall and need an inspection this week."</em></li>
+      `;
+    } else if (nLow.includes('garage')) {
+      jobInput.value = 850;
+      promptList.innerHTML = `
+        <li>• <em>"Hi, my garage door spring just snapped and my car is trapped inside—can someone come out today?"</em></li>
+        <li>• <em>"Hey, I want a quote on a new insulated double garage door with a smart opener."</em></li>
+      `;
+    } else if (nLow.includes('detail') || nLow.includes('tint') || nLow.includes('ppf')) {
+      jobInput.value = 1200;
+      promptList.innerHTML = `
+        <li>• <em>"Hi, I just bought a new truck in ${city} and want a quote on full front-end PPF, ceramic coating, and ceramic window tint."</em></li>
+        <li>• <em>"Hey, what's your earliest opening this week for an interior and exterior full detail?"</em></li>
+      `;
+    } else if (nLow.includes('paint')) {
+      jobInput.value = 4200;
+      promptList.innerHTML = `
+        <li>• <em>"Hi, we need an estimate for exterior painting on a 2-story home in ${city} this month."</em></li>
+        <li>• <em>"Hey, do you guys do kitchen cabinet painting and interior trim?"</em></li>
+      `;
+    } else if (nLow.includes('electric')) {
+      jobInput.value = 1600;
+      promptList.innerHTML = `
+        <li>• <em>"Hi, I need a 200-amp panel upgrade and a Level 2 EV charger installed in my garage in ${city}."</em></li>
+        <li>• <em>"Hey, half the outlets in my kitchen tripped and won't reset—do you have a tech available today?"</em></li>
+      `;
+    } else if (nLow.includes('roof')) {
+      jobInput.value = 8500;
+      promptList.innerHTML = `
+        <li>• <em>"Hi, we had hail and wind damage in ${city} and need a roof inspection this week."</em></li>
+        <li>• <em>"Hey, I have an active roof leak over my garage—how soon can someone take a look?"</em></li>
+      `;
+    }
+
+    function recalcROI() {
+      const val = parseFloat(document.getElementById('jobValueInput').value) || 0;
+      const calls = parseFloat(document.getElementById('missedCallsInput').value) || 0;
+      const total = Math.round(val * calls * 0.30);
+      document.getElementById('lostRevenueOutput').textContent = '$' + total.toLocaleString() + ' / mo';
+    }
+    recalcROI();
+
+    function completeStep1() {
+      const s2 = document.getElementById('step2Card');
+      s2.classList.remove('card-surface');
+      s2.classList.add('card-surface-lime');
+      document.getElementById('step2Badge').textContent = '🔥 STEP 2 UNLOCKED';
+      document.getElementById('step2Badge').className = 'text-xs text-[#CEFF00] font-bold';
+    }
+
+    // Paste your GHL Inbound Webhook URL here once created in GHL Workflows
+    const GHL_OUTBOUND_WEBHOOK_URL = "";
+
+    async function triggerOutboundDemo() {
+      const name = document.getElementById('outboundName').value.trim() || 'Owner';
+      const phone = document.getElementById('outboundPhone').value.trim();
+      const statusEl = document.getElementById('outboundStatus');
+
+      if (!phone || phone.replace(/\D/g, '').length < 10) {
+        statusEl.textContent = '⚠️ Please enter a valid 10-digit mobile number!';
+        statusEl.className = 'text-[11px] text-rose-400 font-bold text-center mt-1.5';
+        return;
+      }
+
+      if (GHL_OUTBOUND_WEBHOOK_URL) {
+        try {
+          await fetch(GHL_OUTBOUND_WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              first_name: name,
+              phone: phone,
+              company_name: company,
+              city: city,
+              niche: niche,
+              locationId: "PVQDoSjNZl5ZE0BjXcFM",
+              source: "Personalized_Demo_Page"
+            })
+          });
+          statusEl.textContent = `✅ Request sent! Watch ${phone} for our call/text in ~15–30 seconds.`;
+          statusEl.className = 'text-[11px] text-[#CEFF00] font-bold text-center mt-1.5';
+          return;
+        } catch (e) { console.error(e); }
+      }
+
+      // Honest fallback before GHL Inbound Webhook URL is pasted: open pre-filled SMS to live GHL line (+1 970 401-7897)
+      const fallbackSms = encodeURIComponent(`Hey Wilfredo, this is ${name} from ${company} in ${city} (${phone}). Call me to show me how Skye works for our ${niche} shop!`);
+      statusEl.innerHTML = `✅ Opening text confirmation to our live line <strong>(970) 401-7897</strong>—tap Send on your phone!`;
+      statusEl.className = 'text-[11px] text-[#CEFF00] font-bold text-center mt-1.5';
+      window.location.href = `sms:+19704017897?&body=${fallbackSms}`;
+    }
+  </script>
+</body>
+</html>
